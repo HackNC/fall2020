@@ -1,0 +1,161 @@
+body {
+  background-color: #17334e;
+  color: black;
+}
+
+.btn, .btn:focus {
+  overflow: hidden;
+  background-color: #FAAA42;
+  color: white;
+  text-transform: none;
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 0.5em auto 1em auto;
+}
+
+.btn:hover {
+  background-color: #FAAA42;
+  color: white;
+  font-size: 1.2em;
+}
+
+.form-btn {
+  color: white !important;
+}
+
+.logo {
+  height: 200px;
+  margin: auto;
+  z-index: -1;
+}
+
+.live-content {
+  padding-top: 20px;
+}
+
+.live-content .row .col iframe {
+  margin: 1rem 0 1rem 0 !important;
+  width: 100% !important;
+}
+
+.twitter-timeline {
+  width: 100% !important;
+  max-height: 600px;
+  margin: 0 0 2rem 0 !important;
+}
+
+.card {
+  margin: 0 0 2rem 0 !important;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card .card-action:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.background-light {
+  background-color: #a2d1e0;
+  color: #17334e;
+}
+
+.background-dark {
+  background-color: #17334e;
+  color: #a2d1e0;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.nitem a span {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.ge {
+  padding-bottom: 30px;
+}
+
+.section a, .section a:active, .section a:hover, .section a:visited {
+  color: #E85D24;
+  text-decoration: none;
+}
+.section a:active, .section a:hover {
+  color: #E85D24;
+  text-decoration: underline;
+}
+
+.section h2 {
+  margin-bottom: 0;
+}
+
+.card-content p, td {
+  font-size: 1rem;
+}
+
+.notify-btn {
+  width: 50%;
+}
+.notify-btn .btn {
+  width: 100%;
+}
+
+.hardware .btn {
+  font-size: 1rem;
+}
+
+.wifi-table {
+  border-top: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wifi-table :last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wifi-table td {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+.wifi-table tr:first-child th {
+  border-top: 0;
+}
+.wifi-table tr:last-child td {
+  border-bottom: 0;
+}
+.wifi-table tr td:last-child {
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  #floor-plans {
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+  }
+  #floor-plans .modal-content {
+    height: 100%;
+    padding: 8px;
+  }
+  #floor-plans .modal-content .carousel {
+    height: 100%;
+  }
+
+  .carousel-item {
+    top: -140px !important;
+    width: 35% !important;
+    height: 35% !important;
+  }
+}
+.beam-logo {
+  width: 150px;
+}
+
+/*# sourceMappingURL=live.css.map */

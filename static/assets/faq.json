@@ -1,0 +1,42 @@
+[
+    {
+        "header": "General",
+        "questions": [
+            {
+                "question": "What is a hackathon?",
+                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+            },
+            {
+                "question": "What is a hackathon?",
+                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+            }
+        ]
+    },
+    {
+        "header": "Virtual",
+        "questions": [
+            {
+                "question": "What is a hackathon?",
+                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+            }
+        ]
+    },
+    {
+        "header": "General",
+        "questions": [
+            {
+                "question": "What is a hackathon?",
+                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+            }
+        ]
+    },
+    {
+        "header": "General",
+        "questions": [
+            {
+                "question": "What is a hackathon?",
+                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+            }
+        ]
+    }
+]

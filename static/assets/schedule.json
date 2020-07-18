@@ -1,0 +1,142 @@
+[
+    {
+        "date": "Saturday, 10/12",
+        "schedule": [
+            {
+                "time": "7:00 AM",
+                "event": "Check-in begins for RSVP'd hackers",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "7:30 AM",
+                "event": "Breakfast",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "9:00 AM",
+                "event": "Check-in begins for everyone",
+                "location": "Union"
+            },
+            {
+                "time": "10:00 AM",
+                "event": "Opening ceremony begins",
+                "location": "Union"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Sponsor Fair",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Hacking begins!",
+                "location": "-"
+            },
+            {
+                "time": "1:00 PM",
+                "event": "Lunch",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "2:00 PM",
+                "event": "Workshop: Modern Web Development with Angular by CapTech",
+                "location": "Room 304 @\nWoollen Gym"
+            },
+            {
+                "time": "2:00 PM",
+                "event": "Workshop: Backend Development in Python + How to Pitch Effectively",
+                "location": "Room 303 @\nWoollen Gym"
+            },
+            {
+                "time": "3:15 PM",
+                "event": "Workshop: Healthcare on the Cloud: Introduction to Microservices Architecture by Allscripts",
+                "location": "Room 304 @\nWoollen Gym"
+            },
+            {
+                "time": "3:15 PM",
+                "event": "Workshop: Ask the Tech Recruiter by Macedon Technologies",
+                "location": "Room 303 @\nWoollen Gym"
+            },
+            {
+                "time": "4:15 PM",
+                "event": "Mid-day Snack",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "4:30 PM",
+                "event": "Workshop: Lambdas by Capital One",
+                "location": "Room 304 @\nWoollen Gym"
+            },
+            {
+                "time": "4:30 PM",
+                "event": "Workshop: Doing Chemistry with Machine Learning by Daniel Korn",
+                "location": "Room 303 @\nWoollen Gym"
+            },
+            {
+                "time": "5:45 PM",
+                "event": "Workshop: Making Sense of Unstructured Text with Python and spaCy by CoStar",
+                "location": "Room 304 @\nWoollen Gym"
+            },
+            {
+                "time": "5:45 PM",
+                "event": "Workshop: An Introduction to User Experience by Credit Suisse",
+                "location": "Room 303 @\nWoollen Gym"
+            },
+            {
+                "time": "7:00 PM",
+                "event": "Dinner",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "8:00 PM",
+                "event": "Women in Tech Panel",
+                "location": "Room 304 @\nWoollen Gym"
+            },
+            {
+                "time": "9:00 PM",
+                "event": "Boardgames",
+                "location": "Main gym @\nWoollen Gym"
+            },
+            {
+                "time": "10:00 PM",
+                "event": "Free Throw Challenge with Capital One ($50 prize)",
+                "location": "Main gym @\nWoollen Gym"
+            },
+            {
+                "time": "12:00 AM",
+                "event": "Midnight Munchies",
+                "location": "Woollen Gym"
+            }
+        ]
+    },
+    {
+        "date": "Sunday, 10/13",
+        "schedule": [
+            {
+                "time": "7:30 AM",
+                "event": "Breakfast",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Hacking ends",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "11:30 AM",
+                "event": "Judging starts",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "12:30 PM",
+                "event": "Lunch",
+                "location": "Woollen Gym"
+            },
+            {
+                "time": "1:30 PM",
+                "event": "Closing Ceremony",
+                "location": "Hamilton Hall"
+            }
+        ]
+    }
+]

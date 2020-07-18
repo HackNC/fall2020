@@ -1,0 +1,244 @@
+<!-- Haven't touched this yet -->
+<!DOCTYPE html>
+<html>
+
+    <head lang="en-us">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="../#3A3352">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        <meta property="og:url" content="https://hacknc.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="HackNC 2019">
+        <meta property="og:description" content="UNC-Chapel Hill's annual fall hackathon" />
+        <meta property="og:image" content="https://hacknc.com/static/assets/images/banner-cropped.png" />
+        
+        <title>HackNC 2019</title>
+        <link rel="shortcut icon" type="image/png" type="image/png" href="/static/assets/images/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/live.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    </head>
+
+    <body>
+        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+        <main id="content container">
+
+        <div class="live-banner">
+            <div id='space-holder'></div>
+            <div class="section dark center">
+                <img class="logo" src="/static/assets/images/banner-cropped.png">
+                <a class="btn btn-large form-btn" href="/static/assets/resources/hackerguide.pdf">Hacker Day-Of Guide</a>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class='nfixed'>
+            <div class="nav-wrapper center">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down">
+                    <li><a href="/live" class="live-nav-link">Live Dashboard</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#travel">Travel</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/#schedule">Schedule</a></li>
+                    <li><a href="/#sponsors">Sponsors</a></li>
+                    <li><a href="/#prizes">Prizes</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Bar -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/live" class="live-nav-link">Live Dashboard</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#travel">Travel</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#schedule">Schedule</a></li>
+            <li><a href="/#sponsors">Sponsors</a></li>
+            <li><a href="/#prizes">Prizes</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        
+        <div class='container' class='live-content'>
+            <div class='row'>
+                <div class="card-col-l center-block col s12 m12 l6">
+                    <a class="twitter-timeline"  href="https://twitter.com/theHackNC" data-widget-id="485547073505218560">Tweets by @theHackNC</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>            
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Announcements & Notifications <i class="fa fa-comments-o"></i></span>
+                            <p>Join one of the following and turn on notifications for updates</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row center">
+                                <div class="notify-btn col s12 m6">
+                                    <a href="https://join.slack.com/t/hacknc2019/shared_invite/enQtNzcyMDk2NjYyMjU2LTE0NjQ3NDJiNGQzMDczZWU0MDk4NDI5NDAwNzY5ZTgzMzRlMGRkZmE5ZDhkY2ViODA3MDNhMzUyMjljZjA3OTE"
+                                        class="waves-effect wave-light btn">
+                                        Slack</a>
+                                </div>
+                                <div class="notify-btn col s12 m6">
+                                    <a href="https://www.facebook.com/events/685007085333025/"
+                                        class="waves-effect wave-light btn">
+                                        Facebook</a>
+                                </div>
+                                <div class="notify-btn col s12 m6">
+                                    <a href="https://twitter.com/thehacknc"
+                                        class="waves-effect wave-light btn">
+                                        Twitter</a>  
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Watch our livestream!</i></span>
+                            <p>Can't make it to a workshop? Watch them live at the link below!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href='https://www.youtube.com/channel/UCDRN6TMC27uSDsZosIwUrZg' 
+                                class="waves-effect wave-light btn">Our Youtube Channel</a>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">WiFi Access <i class="fa fa-wifi"></i></span>
+                            <p>To access WiFi, you need to join one of the falling</p>
+                            <table class="table wifi-table">
+                                <tbody>
+                                    <tr><td>eduroam</td><td> Preferred: You must have already set up eduroam at your school for it to work here.</td></tr>
+                                    <tr><td>UNC-HackNC</td><td>The password is 'MyRubyIsOffTheRails' - Visit the Help Desk if you need help setting up!</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Maps & Floor Plans <i class="fas fa-map"></i></span>
+                            <p>Lost? Need to find a specific room? Check out the floor plans below for help!</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn modal-trigger" href="#floor-plans">Floor Plans</a>
+                        </div>
+                        <div id='floor-plans' class='modal'>
+                            <div class='modal-content light'>
+                                <p><b>Click on the image to view a larger version.</b></p>
+                                <div class="carousel center">
+                                    <div class="carousel-item">
+                                        <a href="/static/assets/images/floorplans/woollen-0.png"><img class="responsive-img" src="/static/assets/images/floorplans/woollen-0.png"></a>
+                                        <p>Ground Floor</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="/static/assets/images/floorplans/woollen-1.png"><img class="responsive-img" src="/static/assets/images/floorplans/woollen-1.png"></a>
+                                        <p>1st Floor</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="/static/assets/images/floorplans/woollen-2.png"><img class="responsive-img" src="/static/assets/images/floorplans/woollen-2.png"></a>
+                                        <p>2nd Floor</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="/static/assets/images/floorplans/woollen-3.png"><img class="responsive-img" src="/static/assets/images/floorplans/woollen-3.png"></a>
+                                        <p>3rd Floor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-col-r center-block col s12 m12 l6">
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Prizes & Submissions <i class="fa fa-trophy"></i></span>
+                            <p>Submission process! Go to devpost and create a new hack. Make sure to (1) note what prizes you are applying for and (2) get all your teammates added as contributors on the project. Demos will begin at 11:30AM and judges will come to your table to see your hack. Keep devpost simple!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href='https://hacknc2019.devpost.com/' 
+                                class="waves-effect wave-light btn">Register on Devpost</a>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">MLH Prize Resources</i></span>
+                            <p>Here are the resources needed to compete for MLH sponsored prizes</p>
+                            <p><a href="https://Hackp.ac/github">Github Education</a></p>
+                            <p><a href="https://Hackp.ac/domain">Domain.com</a></p>
+                            <p><a href="https://Hackp.ac/gcp">Google Cloud Platform</a></p>
+                            <p><a href="https://Hackp.ac/snapkit">Snap Kit</a></p>
+                            <p><a href="https://www.authorize.net">Authorize.net</a></p>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Mentors <i class="fa fa-users"></i></span>
+                            <p>Need help with your hack? Stuck? Need ideas? Talk to a mentor! This year, HackNC is using HelpQ.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href='https://join.slack.com/t/hacknc2019/shared_invite/enQtNzcyMDk2NjYyMjU2LTE0NjQ3NDJiNGQzMDczZWU0MDk4NDI5NDAwNzY5ZTgzMzRlMGRkZmE5ZDhkY2ViODA3MDNhMzUyMjljZjA3OTE' 
+                            class="waves-effect wave-light btn">Request help in #helpme</a>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Parking <i class="fas fa-parking"></i></span>
+                            <p>On-campus parking is typically free between Friday evening and Monday morning. However, some lots may be reserved
+                                for special events. Please watch out for signage when entering any parking lot. The recommended parking lots are:</p>
+                            <ul>
+                                    <li><a href="https://www.google.com/maps/dir/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9107229,-79.0479376,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456143!2d35.911746!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Cobb Parking Deck</a></li>
+                                    <li><a href="https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9082111,-79.0502803,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500641!2d35.9067103!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Bell Tower Parking Deck</a></li>
+                            </ul>
+                            <p>For more locations see the map below.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href='/static/assets/images/maps/parking.png' 
+                            class="waves-effect wave-light btn">Open Map</a>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Sleeping <i class="fas fa-bed"></i></span>
+                            <p>Sleeping is available at the following locations.</p>
+                            <p>For females and gender non-binary hackers:</p>
+                            <ul>
+                                <li>- Woollen 303</li>
+                                <li>- Woollen 304</li>
+                            </ul>
+                            <p>For all other hackers:</p>
+                            <ul>
+                                <li>- Fetzer 104</li>
+                                <li>- Fetzer 106</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Travel Reimbursement <i class="fa fa-suitcase"></i></span>
+                            <p>To recieve reimbursement, you must have: (1) Registered in advance, (2) Kept receipts, (3) Traveled more than 50 miles from school, and (4) Must have submitted a project. Fill out the below form to begin the process:</p>
+                        </div>
+                        <div class="card-action">
+                            <a href='#' 
+                                class="waves-effect wave-light btn">Not Currently Available</a>                        </div>
+                    </div>
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Help Desk <i class="fa fa-question-circle"></i></span>
+                            <p>For both technical and non-technical issues, The best place to get help from a HackNC organizer is the help desk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/static/js/live.js"></script>
+</html>

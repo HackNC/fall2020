@@ -1,6 +1,6 @@
 [
     {
-        "header": "General",
+        "header": "General Questions",
         "questions": [
             {
                 "question": "What is a hackathon?",
@@ -13,7 +13,7 @@
         ]
     },
     {
-        "header": "Virtual",
+        "header": "A Virtual Hackathon?",
         "questions": [
             {
                 "question": "What is a hackathon?",

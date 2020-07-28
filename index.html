@@ -18,10 +18,10 @@
     <!-- Need new shortcut icon -->
     <link rel="shortcut icon" type="image/png" type="image/png" href="static/assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
-    rel="stylesheet">
+        rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/main.css">
     <script src="static/js/main.js"></script>
 </head>
@@ -64,22 +64,6 @@
             </div>
         </div> -->
 
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="container">
-                <a class="nav-logo" href="#home">HackNC</a>
-                <ul class="hide-on-med-and-down">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#tracks">Tracks</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a class="apply" target="_blank" href="https://forms.gle/2dP14Cpjy4FfvAqE7">Apply Now!</a></li>
-                </ul>
-            </div>
-        </nav>
-
         <!-- Mobile Navigation Bar: Decide if this is necessary and if so fix it -->
         <!-- <ul class="sidenav" id="mobile-demo">
             <li><a href="#home">Home</a></li>
@@ -92,9 +76,9 @@
         </ul> -->
 
         <!-- Logo and header: I haven't touched this yet because graphics are needed -->
-        <div>
+        <div class="banner">
             <a class="nav-anchor" id="home"></a>
-            <div class="logo-text-container">
+            <!-- <div class="logo-text-container">
                 <div class="logo-text">
                     <span class="logo-text-main">
                         HackNC 2019
@@ -103,19 +87,25 @@
                         October 12-13
                     </span>
                 </div>
-            </div>
-            <div class="section transparent center">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Thanks for making HackNC 2019 a success!</h4>
-                        <a class="top-page-btn valign-wrapper btn-large
-                                modal-trigger form-btn" href="https://forms.gle/2dP14Cpjy4FfvAqE7">Sign up for HackNC
-                            2020!</a>
-                    </div>
-
-                </div>
+            </div> -->
+            <div class="about">
+                <h3>Header</h3>
+                <p>Text</p>
             </div>
         </div>
+
+        <!-- Navigation Bar -->
+        <nav class="hide-on-med-and-down">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a class="apply" target="_blank" href="https://forms.gle/2dP14Cpjy4FfvAqE7">Apply Now!</a></li>
+            </ul>
+        </nav>
 
         <!-- About Section: Is this really necessary? -->
         <div class="section">
@@ -230,7 +220,7 @@
         <div class="section">
             <a class="nav-anchor" id="faq"></a>
             <div class="container">
-                <h1>FAQ</h1>
+                <h1>Any Questions?</h1>
                 <div id="faq-container"></div>
                 <!-- <div class="center row">
                     <div class="col s12 m6 l6">

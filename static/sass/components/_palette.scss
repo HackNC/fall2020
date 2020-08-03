@@ -1,16 +1,44 @@
-// Graphics color palette: need to fix this
+//CHANGE THESE
+//banner
+$banner-text: white;
+$banner-background: #17334e;
+
+//nav bar
+$nav-text: white;
+$nav-emphasis: red;
+$nav-background: #17334e;
+
+//about 
+$about-text: white;
+$about-background: #17334e;
+
+//schedule
+$schedule-text: white;
+$schedule-background: #17334e;
+$schedule-button: #17334e;
+$schedule-button-active: white;
+$table-dark: white;
+$table-light: #17334e;
+
+//faq
+$faq-text: white;
+$faq-background: #17334e;
+
+//sponsors
+$sponsor-text: #17334e;
+$sponsor-background: white;
+
+//footer
+$footer-text: white;
+$footer-background: #17334e;
+
+
+//OLD
 $g-red: #E85D24;
 $g-light-red: #FAAA42;
 $g-gold: #FEB252;
 $g-off-white: #FAF4A8;
 $dark-blue: #17334e;
-
-$f-color: white;
-
 $dark-bg: #17334e;
 $light-bg: #a2d1e0;
-$sponsor-bg: white;
 $border: #a2d1e0;
-
-$table-dark: white;
-$table-light: #17334e;

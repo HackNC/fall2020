@@ -8,8 +8,6 @@
 }
 html,
 body {
-  color: white;
-  background: #17334e;
   font-family: "Quicksand";
   font-size: 16px;
   margin: 0;
@@ -34,16 +32,18 @@ h1 {
   letter-spacing: 0.075em;
   font-family: "creepster";
   margin-bottom: 0px;
+  margin-top: 0px;
   text-align: center;
   font-size: 7.5vh;
 }
 
 a {
-  color: #E85D24;
+  color: red;
 }
 
 .section {
   font-size: 1.3em;
+  padding: 20px 0px 5px 0px;
 }
 
 .logo-text-container {
@@ -79,22 +79,33 @@ a {
   color: #17334e;
 }
 
+.splash {
+  background-color: #17334e;
+}
+
 .banner {
   background-image: url("/static/assets/images/art/front.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   min-height: calc(100vh - 64px);
-  width: 70vw;
+  width: 75vw;
 }
 
-.about {
-  display: flex;
-  justify-content: flex-end;
+.banner-info {
+  position: absolute;
+  right: 3vw;
+  top: 27.5vh;
+  color: white;
 }
-
-.transparent {
-  background-color: transparent;
+.banner-info .tagline {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.banner-info .date {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 600px) {
@@ -234,6 +245,22 @@ nav ul a:hover::before {
   visibility: hidden;
 }
 
+.about {
+  background: #17334e;
+  color: white;
+}
+.about p {
+  margin-bottom: 0px;
+}
+
+.schedule {
+  background: #17334e;
+  color: white;
+}
+.schedule p {
+  margin-bottom: 0px;
+}
+
 .table-row-odd {
   color: white;
   background: #17334e;
@@ -307,6 +334,11 @@ td, th {
   display: table;
 }
 
+.faq {
+  background: #17334e;
+  color: white;
+}
+
 .faq-row,
 .sch-row {
   display: flex;
@@ -370,6 +402,9 @@ td, th {
   background: white;
   color: #17334e;
 }
+.sponsors p {
+  margin-bottom: 0px;
+}
 
 .sponsor-image {
   display: inline-block;
@@ -425,6 +460,7 @@ footer {
   text-align: center;
   height: 15vh;
   background-image: linear-gradient(to bottom, #17334e, black);
+  color: white;
 }
 footer a {
   color: white;

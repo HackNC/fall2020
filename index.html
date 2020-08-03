@@ -75,22 +75,14 @@
             <li><a class="modal-trigger" href="#volunteer-mentor">Volunteer/Mentor</a></li>
         </ul> -->
 
-        <!-- Logo and header: I haven't touched this yet because graphics are needed -->
-        <div class="banner">
-            <a class="nav-anchor" id="home"></a>
-            <!-- <div class="logo-text-container">
-                <div class="logo-text">
-                    <span class="logo-text-main">
-                        HackNC 2019
-                    </span>
-                    <span class="logo-slogan">
-                        October 12-13
-                    </span>
+        <!-- Logo and header -->
+        <div class="splash">
+            <div class="banner">
+                <a class="nav-anchor" id="home"></a>
+                <div class="banner-info">
+                    <p class="tagline">Something about solving mysteries here?</p>
+                    <p class="date">October 12-13, 2020</p>
                 </div>
-            </div> -->
-            <div class="about">
-                <h3>Header</h3>
-                <p>Text</p>
             </div>
         </div>
 
@@ -108,12 +100,12 @@
         </nav>
 
         <!-- About Section: Is this really necessary? -->
-        <div class="section">
+        <div class="section about">
             <a class="nav-anchor" id="about"></a>
             <div class="container">
                 <div class="row">
                     <div class="col s12">
-                        <h2 class="center">Who we are</h2>
+                        <h1>Who we are</h1>
                         <p>HackNC is an annual, student-run hackathon hosted by the University of North Carolina at
                             Chapel Hill. Every fall, hundreds of students arrive at UNC to spend the weekend inventing
                             something amazing. We’re one of the largest hackathons in the southeastern United States.
@@ -206,7 +198,7 @@
         </div>
 
         <!-- Schedule: needs better colors -->
-        <div class='section dark'>
+        <div class='section schedule'>
             <a class="nav-anchor" id="schedule"></a>
             <div class='container'>
                 <h1>Schedule</h1>
@@ -217,7 +209,7 @@
         </div>
 
         <!-- FAQ: Currently just a proof of concept, see faq.json -->
-        <div class="section">
+        <div class="section faq">
             <a class="nav-anchor" id="faq"></a>
             <div class="container">
                 <h1>Any Questions?</h1>
@@ -388,148 +380,134 @@
 
         <!-- Sponsors: I haven't fixed formatting yet because it will depend on how many of each sponsor tier we have this year -->
         <!-- Need a better way to transition to white background because right now it is very abrupt -->
-        <div class="info">
-            <div class="section sponsors">
-                <a class="nav-anchor" id="sponsors"></a>
-                <div class="container">
-                    <h1>Sponsors</h1>
-                    <div class='center'>
-                        <div class="row sponsor-row">
-                            <div class="col m12 center">
-                                <a target="_blank" href='https://www.captechconsulting.com/'>
-                                    <img class='sponsor-image tier-4'
-                                        src='static/assets/images/sponsors/captech.png'></a>
-                            </div>
+        <div class="section sponsors">
+            <a class="nav-anchor" id="sponsors"></a>
+            <div class="container">
+                <h1>Sponsors</h1>
+                <div class='center'>
+                    <div class="row sponsor-row">
+                        <div class="col m12 center">
+                            <a target="_blank" href='https://www.captechconsulting.com/'>
+                                <img class='sponsor-image tier-4' src='static/assets/images/sponsors/captech.png'></a>
                         </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 center">
-                                <a target="_blank" href='https://www.costar.com/'>
-                                    <img class='sponsor-image tier-3'
-                                        src='static/assets/images/sponsors/costar.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 center">
-                                <a target="_blank" href='https://campus.capitalone.com/'>
-                                    <img class='sponsor-image tier-3'
-                                        src='static/assets/images/sponsors/capitalone.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.allscripts.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/allscripts.png'></a>
-                            </div>
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.credit-suisse.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/creditsuisse.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.facebook.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/facebook.png'></a>
-                            </div>
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.fidelity.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/fidelity.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.iqvia.com/'>
-                                    <img class='sponsor-image tier-2' src='static/assets/images/sponsors/iqvia.png'></a>
-                            </div>
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.deere.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/johndeere.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://macedontechnologies.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/macedon.png'></a>
-                            </div>
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.metlife.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/metlife.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.millenniumadvisors.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/millenniumadvisors.png'></a>
-                            </div>
-                            <div class="col m12 l6 center">
-                                <a target="_blank" href='https://www.vanguard.com/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/vanguard.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l3 offset-l3 center">
-                                <a target="_blank" href='https://www.atd-us.com/'>
-                                    <img class='sponsor-image tier-1' src='static/assets/images/sponsors/atd.png'></a>
-                            </div>
-                            <div class="col m12 l3 center">
-                                <a target="_blank" href='https://www.cheerwine.com/'>
-                                    <img class='sponsor-image tier-1'
-                                        src='static/assets/images/sponsors/cheerwine.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l3 offset-l3 center">
-                                <a target="_blank" href='https://www.monsterenergy.com/'>
-                                    <img class='sponsor-image tier-1'
-                                        src='static/assets/images/sponsors/monsterenergy.png'></a>
-                            </div>
-                            <div class="col m12 l3 center">
-                                <a target="_blank" href='http://hackp.ac/mlh-stickermule-hackathons/'>
-                                    <img class='sponsor-image tier-1'
-                                        src='static/assets/images/sponsors/stickermule.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l4 offset-l4 center">
-                                <a target="_blank" href='https://www.wolfram.com/'>
-                                    <img class='sponsor-image tier-1'
-                                        src='static/assets/images/sponsors/wolfram.png'></a>
-                            </div>
-                        </div>
-                        <div class="row sponsor-row">
-                            <div class="col m12 l4 center">
-                                <a target="_blank" href="http://beam.unc.edu/">
-                                    <img class='sponsor-image tier-2' src='static/assets/images/sponsors/unc-beam.png'>
-                                </a>
-                            </div>
-                            <div class="col m12 l4 center">
-                                <a target="_blank" href='https://unc-cssg.org/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/cssgunc.png'></a>
-                            </div>
-                            <div class="col m12 l4">
-                                <a target="_blank" href='https://siam.org/'>
-                                    <img class='sponsor-image tier-2' src='static/assets/images/sponsors/siam.png'></a>
-                            </div>
-                        </div>
-                        <div class='row sponsor-row'>
-                            <div class='col m12 center'>
-                                <a target="_blank" href='https://cs.unc.edu/'>
-                                    <img class='sponsor-image tier-2'
-                                        src='static/assets/images/sponsors/unc-cs.png'></a>
-                            </div>
-                        </div>
-                        <p class="center">Looking to sponsor HackNC 2019? Email us at <a class="sponsor-email"
-                                href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a></p>
                     </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 center">
+                            <a target="_blank" href='https://www.costar.com/'>
+                                <img class='sponsor-image tier-3' src='static/assets/images/sponsors/costar.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 center">
+                            <a target="_blank" href='https://campus.capitalone.com/'>
+                                <img class='sponsor-image tier-3'
+                                    src='static/assets/images/sponsors/capitalone.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.allscripts.com/'>
+                                <img class='sponsor-image tier-2'
+                                    src='static/assets/images/sponsors/allscripts.png'></a>
+                        </div>
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.credit-suisse.com/'>
+                                <img class='sponsor-image tier-2'
+                                    src='static/assets/images/sponsors/creditsuisse.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.facebook.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/facebook.png'></a>
+                        </div>
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.fidelity.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/fidelity.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.iqvia.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/iqvia.png'></a>
+                        </div>
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.deere.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/johndeere.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://macedontechnologies.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/macedon.png'></a>
+                        </div>
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.metlife.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/metlife.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.millenniumadvisors.com/'>
+                                <img class='sponsor-image tier-2'
+                                    src='static/assets/images/sponsors/millenniumadvisors.png'></a>
+                        </div>
+                        <div class="col m12 l6 center">
+                            <a target="_blank" href='https://www.vanguard.com/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/vanguard.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l3 offset-l3 center">
+                            <a target="_blank" href='https://www.atd-us.com/'>
+                                <img class='sponsor-image tier-1' src='static/assets/images/sponsors/atd.png'></a>
+                        </div>
+                        <div class="col m12 l3 center">
+                            <a target="_blank" href='https://www.cheerwine.com/'>
+                                <img class='sponsor-image tier-1' src='static/assets/images/sponsors/cheerwine.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l3 offset-l3 center">
+                            <a target="_blank" href='https://www.monsterenergy.com/'>
+                                <img class='sponsor-image tier-1'
+                                    src='static/assets/images/sponsors/monsterenergy.png'></a>
+                        </div>
+                        <div class="col m12 l3 center">
+                            <a target="_blank" href='http://hackp.ac/mlh-stickermule-hackathons/'>
+                                <img class='sponsor-image tier-1'
+                                    src='static/assets/images/sponsors/stickermule.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l4 offset-l4 center">
+                            <a target="_blank" href='https://www.wolfram.com/'>
+                                <img class='sponsor-image tier-1' src='static/assets/images/sponsors/wolfram.png'></a>
+                        </div>
+                    </div>
+                    <div class="row sponsor-row">
+                        <div class="col m12 l4 center">
+                            <a target="_blank" href="http://beam.unc.edu/">
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/unc-beam.png'>
+                            </a>
+                        </div>
+                        <div class="col m12 l4 center">
+                            <a target="_blank" href='https://unc-cssg.org/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/cssgunc.png'></a>
+                        </div>
+                        <div class="col m12 l4">
+                            <a target="_blank" href='https://siam.org/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/siam.png'></a>
+                        </div>
+                    </div>
+                    <div class='row sponsor-row'>
+                        <div class='col m12 center'>
+                            <a target="_blank" href='https://cs.unc.edu/'>
+                                <img class='sponsor-image tier-2' src='static/assets/images/sponsors/unc-cs.png'></a>
+                        </div>
+                    </div>
+                    <p class="center">Looking to sponsor HackNC 2019? Email us at <a class="sponsor-email"
+                            href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a></p>
                 </div>
             </div>
         </div>

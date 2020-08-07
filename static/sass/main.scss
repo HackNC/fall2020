@@ -77,15 +77,6 @@ a {
     font-size: 5vh;
 }
 
-.dark {
-    background: $dark-blue;
-}
-
-.light {
-    background: $light-bg;
-    color: $dark-blue;
-}
-
 .splash {
     background-color: $banner-background;
 }
@@ -229,7 +220,7 @@ nav {
                 &:hover {
                     transform: scale(1.05) translateY(-50%);
                     transition: transform 0.3s;
-                    background-color: red;
+                    background-color: $nav-emphasis;
                     color: $nav-text;
                     position: relative;
                     top: 50%;
@@ -330,7 +321,7 @@ td, th {
     flex: 0 0 50%;
     text-align: center;
     background-color: $schedule-button;
-    border: 3px solid white;
+    border: 3px solid $b-brown;
     color: $schedule-button-active;
     line-height: 1.5em;
 
@@ -497,8 +488,8 @@ td, th {
 
 footer {
     text-align: center;
-    height: 15vh;
-    background-image: linear-gradient(to bottom, $footer-background, black);
+    height: 10vh;
+    background: $footer-background;
     color: $footer-text;
 
     a {

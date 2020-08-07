@@ -1,44 +1,43 @@
-//CHANGE THESE
+$light-green: #adbf88;
+$med-blue: #116f9e;
+$brown: #a46c29;
+
+$b-green: #6d7645;
+$b-green2: #979f7f;
+$b-brown: #4f3426;
+$b-red: #994b35;
+$b-cream: #F7F2D8;
+$b-tan: #E7D8BC;
+
 //banner
-$banner-text: white;
-$banner-background: #17334e;
+$banner-text: $b-brown;
+$banner-background: $b-tan;
 
 //nav bar
-$nav-text: white;
-$nav-emphasis: red;
-$nav-background: #17334e;
+$nav-text: $b-brown;
+$nav-emphasis: $light-green;
+$nav-background: $b-tan;
 
 //about 
-$about-text: white;
-$about-background: #17334e;
+$about-text: $b-brown;
+$about-background: $b-tan;
 
 //schedule
-$schedule-text: white;
-$schedule-background: #17334e;
-$schedule-button: #17334e;
-$schedule-button-active: white;
-$table-dark: white;
-$table-light: #17334e;
+$schedule-text: $b-brown;
+$schedule-background: $b-tan;
+$schedule-button: $b-cream;
+$schedule-button-active: $brown;
+$table-dark: $brown;
+$table-light: $b-cream;
 
 //faq
-$faq-text: white;
-$faq-background: #17334e;
+$faq-text: $b-brown;
+$faq-background: $b-tan;
 
 //sponsors
-$sponsor-text: #17334e;
+$sponsor-text: $b-brown;
 $sponsor-background: white;
 
 //footer
-$footer-text: white;
-$footer-background: #17334e;
-
-
-//OLD
-$g-red: #E85D24;
-$g-light-red: #FAAA42;
-$g-gold: #FEB252;
-$g-off-white: #FAF4A8;
-$dark-blue: #17334e;
-$dark-bg: #17334e;
-$light-bg: #a2d1e0;
-$border: #a2d1e0;
+$footer-text: $b-brown;
+$footer-background: $b-tan;

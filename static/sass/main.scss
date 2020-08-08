@@ -10,6 +10,10 @@
     src: url("/static/assets/dellmonte-sans.otf") format("opentype");
 }
 
+.center {
+    text-align: center;
+}
+
 html,
 body {
     font-family: "Quicksand";
@@ -35,7 +39,7 @@ body {
 }
 
 h1 {
-    letter-spacing: .075em;
+    letter-spacing: 0.075em;
     font-family: "creepster";
     margin-bottom: 0px;
     margin-top: 0px;
@@ -49,36 +53,12 @@ a {
 
 .section {
     font-size: 1.3em;
-    padding: 20px 0px 5px 0px;
-}
-
-.logo-text-container {
-    display: flex;
-    font-family: DellmonteSans;
-    font-size: 128px;
-    font-size: 15vh;
-    flex-grow: 1;
-    padding-top: 15vh;
-    justify-content: center;
-    width: 100%;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-text-main {
-    line-height: 1;
-}
-
-.logo-slogan {
-    //font-size: 48px;
-    font-size: 5vh;
+    padding: 35px 0px 5px 0px;
 }
 
 .splash {
     background-color: $banner-background;
+    position: relative;
 }
 
 .banner {
@@ -86,88 +66,142 @@ a {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    width: 57vw;
     min-height: calc(100vh - 64px);
-    width: 75vw;
+    margin-left: 3vw;
 }
 
 .banner-info {
+    width: calc(38vw - 20px);
     position: absolute;
-    right: 3vw;
+    right: 5px;
     top: 27.5vh;
     color: $banner-text;
-    
+
+    .apply {
+        display: none;
+    }
+
     .tagline {
-        font-size: 1.5rem;
-        text-transform: capitalize;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        margin-bottom: 1vw;
     }
 
     .date {
+        margin-top: 0px;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .splash {
+        min-height: 100vh;
+    }
+
+    .banner {
+        background-image: url("/static/assets/images/art/front.svg");
+        background-position: 50% 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 95vw;
+        height: 70vh;
+        min-height: auto;
+        position: relative;
+    }
+
+    .banner-info {
+        height: fit-content;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 70vh;
+        right: auto;
+        left: 50%;
+        margin-left: -40%;
+        color: $banner-text;
+        text-align: center;
+
+        .apply {
+            display: block;
+            background-color: $nav-emphasis;
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            padding: 5px 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            font-size: 3vw;
+        }
+
+        .tagline {
+            font-size: 3vw;
+            text-transform: uppercase;
+            margin-bottom: 1.5vw;
+        }
+
+        .date {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 4vw;
+            text-transform: capitalize;
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .logo-text-container {
-        font-size: 12vw;
-        justify-content: center;
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-top: 25vh;
+    .splash {
+        min-height: 80vh;
     }
-    .logo-slogan {
-        font-size: 5vw;
+
+    .banner {
+        background-image: url("/static/assets/images/art/front.svg");
+        background-position: 50% 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 95vw;
+        height: 50vh;
+        min-height: auto;
+        position: relative;
     }
-}
 
-@media (orientation: portrait) {
-    .logo-text-container {
-        font-size: 12vw;
-        justify-content: center;
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-top: 25vh;
-    }
-    .logo-slogan {
-        font-size: 5vw;
-    }
-}
+    .banner-info {
+        height: fit-content;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50vh;
+        right: auto;
+        left: 50%;
+        margin-left: -40%;
+        color: $banner-text;
+        text-align: center;
 
-.hacknc {
-    margin-top: 0;
-}
+        .apply {
+            font-size: 4vw;
+        }
 
-.form-btn,
-.form-btn:focus {
-    // font-size: 1em;
-    overflow: hidden;
-    background-color: brown;
-    // color: white;
-    text-transform: none;
-    // font-weight: 200;
-    margin: 0.5em auto 1em auto;
-}
+        .tagline {
+            font-size: 4vw;
+            text-transform: uppercase;
+            margin-bottom: 2vw;
+        }
 
-.form-btn:hover {
-    background-color: darkorange;
-}
-
-.top-page-btn {
-    height: 15vh !important;
-    width: 60vw;
-    font-size: 1.2em;
-}
-
-.modal {
-    .form-btn {
-        font-size: 1.5em;
+        .date {
+            margin-top: 0px;
+            font-weight: bold;
+            font-size: 5vw;
+            text-transform: capitalize;
+        }
     }
 }
 
 @media only screen and (max-width: 993px) {
     .hide-on-med-and-down {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -267,22 +301,42 @@ nav {
     }
 }
 
-.schedule {
-    background: $schedule-background;
-    color: $schedule-text;
-    
-    p {
-        margin-bottom: 0px;
+.tracks {
+    background: $tracks-background;
+    color: $tracks-text;
+
+    img {
+        height: calc(90vh - 64px);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
+.schedule {
+    background: $schedule-background;
+    color: $schedule-text;
+
+    p {
+        margin-bottom: 120px;
+    }
+}
+
+.sch-img {
+    position: absolute;
+    left: calc(50%);
+    bottom: -250px;
+    transform: rotate(-90deg);
+    height: 330px;
+}
+
 .table-row-odd {
-    color: $table-dark;
+    color: $schedule-dark-text;
     background: $table-light;
 }
 
 .table-row-even {
-    color: $table-light;
+    color: $schedule-light-text;
     background: $table-dark;
 }
 
@@ -312,7 +366,8 @@ tbody tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
 }
 
-td, th {
+td,
+th {
     padding: 6px;
 }
 
@@ -321,9 +376,11 @@ td, th {
     flex: 0 0 50%;
     text-align: center;
     background-color: $schedule-button;
-    border: 3px solid $b-brown;
-    color: $schedule-button-active;
+    border: 3px solid $schedule-button-active;
+    color: $schedule-dark-text;
     line-height: 1.5em;
+    font-size: 4vh;
+    margin-bottom: 25px;
 
     &:first-child {
         border-top-left-radius: 5px;
@@ -339,12 +396,15 @@ td, th {
         background-color: rgba(black, 0.15);
     }
 
+    &:focus {
+        outline: thin dotted;
+    }
+
     &.active {
         transition: background-color 0.15s ease-in-out;
         background-color: $schedule-button-active;
-        color: $schedule-button;
+        color: $schedule-light-text;
     }
-
 }
 
 .sch-table {
@@ -353,6 +413,20 @@ td, th {
     &.active {
         display: table;
     }
+}
+
+.faq-title-img {
+    position: relative;
+    top: 30px;
+    height: 120px;
+
+    &.mirrored {
+        transform: scale(-1, 1);
+    }
+}
+
+.faq-title {
+    display: inline;
 }
 
 .faq {
@@ -443,13 +517,6 @@ td, th {
         transform: scale(1.05);
         transition: transform 0.3s;
     }
-}
-
-.valign-wrapper {
-    height: 187px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .tier-4 {

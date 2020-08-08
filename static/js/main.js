@@ -43,13 +43,13 @@ $(document).ready(function () {
     $.getJSON("/static/assets/schedule.json", function (data) {
 
         var $header = $('<div>', { "class": "sch-row" });
-        var $tables = $('<div>');
+        var $tables = $('<div>', {"style": "position: relative;"});
 
         var i = 0;
 
         data.forEach(function (date) {
             $header.append(
-                $('<h3>', {"class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i})
+                $('<button>', {"class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i})
                     .text(date['date'])
                     .on('click', function () {
                         if(!$(this).hasClass('active')) {
@@ -91,6 +91,9 @@ $(document).ready(function () {
         });
 
         $("#schedule-container").append($header);
+        $tables.append(
+            $('<img>', {"class": "sch-img hide-on-med-and-down", "src": "/static/assets/images/art/kraken.svg"})
+        );
         $("#schedule-container").append($tables);
     });
 

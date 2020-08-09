@@ -44,7 +44,13 @@ h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: center;
-    font-size: 7.5vh;
+    font-size: 4vw;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
 }
 
 a {
@@ -250,8 +256,10 @@ nav {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
 
                 &:hover {
+                    -webkit-transform: scale(1.05) translateY(-50%);
                     transform: scale(1.05) translateY(-50%);
                     transition: transform 0.3s;
                     background-color: $nav-emphasis;
@@ -274,12 +282,14 @@ nav {
                 left: 0;
                 background-color: $nav-text;
                 visibility: hidden;
+                -webkit-transform: scaleX(0);
                 transform: scaleX(0);
                 transition: all 0.3s ease-in-out 0s;
             }
             &:hover::before {
                 visibility: visible;
                 transform: scaleX(1);
+                -webkit-transform: scaleX(1);
             }
         }
     }
@@ -305,11 +315,118 @@ nav {
     background: $tracks-background;
     color: $tracks-text;
 
-    img {
-        height: calc(90vh - 64px);
+    div {
+        text-align: center;
+
+        &.wrapper {
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 993px) {
+            &.wrapper {
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                margin-top: 7.5vw;
+                margin-bottom: 6vw;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            &.wrapper {
+                transform: scale(1.65);
+                -webkit-transform: scale(1.65);
+                margin-top: 9vw;
+                margin-bottom: 7vw;
+            }
+        }
+
+        &.track {
+            position: absolute;
+            cursor: pointer;
+            transition: all ease-out 0.5s;
+            width: fit-content;
+
+            &:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1vw;
+        max-width: 10vw;
+        margin: 0 auto;
+    }
+
+    .background {
+        height: 40vw;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+    }
+
+    .nessie {
+        left: 10.5%;
+        top: 14.5%;
+
+        img {
+            height: 4.5vw;
+        }
+    }
+
+    .boatsquatch {
+        top: 48%;
+        left: 7%;
+
+        img {
+            height: 5.5vw;
+        }
+    }
+
+    .krakenlake {
+        left: 28.8%;
+        top: 28.5%;
+
+        img {
+            height: 11.1vw;
+        }
+
+        h2 {
+            position: relative;
+            top: -3.5vw;
+        }
+    }
+
+    .mothman {
+        left: 50%;
+        top: 9.5%;
+
+        img {
+            height: 7vw;
+        }
+    }
+
+    .yeti {
+        left: 76%;
+        top: 9.5%;
+
+        img {
+            height: 8vw;
+        }
+    }
+
+    .ram {
+        left: 75%;
+        top: 60%;
+
+        img {
+            height: 10.5vw;
+        }
     }
 }
 
@@ -327,6 +444,7 @@ nav {
     left: calc(50%);
     bottom: -250px;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     height: 330px;
 }
 
@@ -374,12 +492,14 @@ th {
 .day-selector {
     cursor: pointer;
     flex: 0 0 50%;
+    -webkit-flex: 0 0 50%;
     text-align: center;
     background-color: $schedule-button;
     border: 3px solid $schedule-button-active;
     color: $schedule-dark-text;
     line-height: 1.5em;
     font-size: 4vh;
+    margin-top: 10px;
     margin-bottom: 25px;
 
     &:first-child {
@@ -422,6 +542,7 @@ th {
 
     &.mirrored {
         transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
     }
 }
 
@@ -474,6 +595,7 @@ th {
         transition: transform 0.4s cubic-bezier(0, 1, 0, 1);
 
         &.selected {
+            -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
             transition: transform 0.35s ease-in-out;
         }
@@ -499,6 +621,16 @@ th {
     }
 }
 
+#faq-footer {
+    background-image: url("/static/assets/images/art/borders.svg");
+    background-position: center bottom;
+    height: 15vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: -8px;
+}
+
 .sponsors {
     background: $sponsor-background;
     color: $sponsor-text;
@@ -515,6 +647,7 @@ th {
 
     &:hover {
         transform: scale(1.05);
+        -webkit-transform: scale(1.05);
         transition: transform 0.3s;
     }
 }

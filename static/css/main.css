@@ -38,9 +38,14 @@ h1 {
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
-  font-size: 7.5vh;
+  font-size: 4vw;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
 a {
   color: red;
 }
@@ -231,8 +236,10 @@ nav ul a.apply {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 nav ul a.apply:hover {
+  -webkit-transform: scale(1.05) translateY(-50%);
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
   background-color: #116f9e;
@@ -252,12 +259,14 @@ nav ul a::before {
   left: 0;
   background-color: #F7F2D8;
   visibility: hidden;
+  -webkit-transform: scaleX(0);
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 nav ul a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+  -webkit-transform: scaleX(1);
 }
 
 .nav-anchor {
@@ -279,11 +288,98 @@ nav ul a:hover::before {
   background: #F7F2D8;
   color: #4f3426;
 }
-.tracks img {
-  height: calc(90vh - 64px);
+.tracks div {
+  text-align: center;
+}
+.tracks div.wrapper {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 993px) {
+  .tracks div.wrapper {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    margin-top: 7.5vw;
+    margin-bottom: 6vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .tracks div.wrapper {
+    transform: scale(1.65);
+    -webkit-transform: scale(1.65);
+    margin-top: 9vw;
+    margin-bottom: 7vw;
+  }
+}
+.tracks div.track {
+  position: absolute;
+  cursor: pointer;
+  transition: all ease-out 0.5s;
+  width: fit-content;
+}
+.tracks div.track:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.tracks h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1vw;
+  max-width: 10vw;
+  margin: 0 auto;
+}
+.tracks .background {
+  height: 40vw;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+.tracks .nessie {
+  left: 10.5%;
+  top: 14.5%;
+}
+.tracks .nessie img {
+  height: 4.5vw;
+}
+.tracks .boatsquatch {
+  top: 48%;
+  left: 7%;
+}
+.tracks .boatsquatch img {
+  height: 5.5vw;
+}
+.tracks .krakenlake {
+  left: 28.8%;
+  top: 28.5%;
+}
+.tracks .krakenlake img {
+  height: 11.1vw;
+}
+.tracks .krakenlake h2 {
+  position: relative;
+  top: -3.5vw;
+}
+.tracks .mothman {
+  left: 50%;
+  top: 9.5%;
+}
+.tracks .mothman img {
+  height: 7vw;
+}
+.tracks .yeti {
+  left: 76%;
+  top: 9.5%;
+}
+.tracks .yeti img {
+  height: 8vw;
+}
+.tracks .ram {
+  left: 75%;
+  top: 60%;
+}
+.tracks .ram img {
+  height: 10.5vw;
 }
 
 .schedule {
@@ -299,6 +395,7 @@ nav ul a:hover::before {
   left: calc(50%);
   bottom: -250px;
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
   height: 330px;
 }
 
@@ -346,12 +443,14 @@ th {
 .day-selector {
   cursor: pointer;
   flex: 0 0 50%;
+  -webkit-flex: 0 0 50%;
   text-align: center;
   background-color: #adbf88;
   border: 3px solid #477215;
   color: #4f3426;
   line-height: 1.5em;
   font-size: 4vh;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 .day-selector:first-child {
@@ -388,6 +487,7 @@ th {
 }
 .faq-title-img.mirrored {
   transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
 }
 
 .faq-title {
@@ -437,6 +537,7 @@ th {
   transition: transform 0.4s cubic-bezier(0, 1, 0, 1);
 }
 .question img.selected {
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   transition: transform 0.35s ease-in-out;
 }
@@ -458,6 +559,16 @@ th {
   transition: max-height 0.5s ease-in-out;
 }
 
+#faq-footer {
+  background-image: url("/static/assets/images/art/borders.svg");
+  background-position: center bottom;
+  height: 15vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: -8px;
+}
+
 .sponsors {
   background: white;
   color: #4f3426;
@@ -473,6 +584,7 @@ th {
 }
 .sponsor-image:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
   transition: transform 0.3s;
 }
 

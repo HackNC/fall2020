@@ -1,4 +1,38 @@
 $(document).ready(function () {
+    document.getElementById('nessie').onclick = function() {
+        document.getElementById('nessie-modal').style.display = "block";
+    }
+
+    document.getElementById('boatsquatch').onclick = function() {
+        document.getElementById('boatsquatch-modal').style.display = "block";
+    }
+
+    document.getElementById('krakenlake').onclick = function() {
+        document.getElementById('krakenlake-modal').style.display = "block";
+    }
+
+    document.getElementById('mothman').onclick = function() {
+        document.getElementById('mothman-modal').style.display = "block";
+    }
+
+    document.getElementById('yeti').onclick = function() {
+        document.getElementById('yeti-modal').style.display = "block";
+    }
+
+    document.getElementById('ram').onclick = function() {
+        document.getElementById('ram-modal').style.display = "block";
+    }
+
+    $('.close').on('click', function() {
+        $(this).closest('.modal').css("display", "none");
+    })
+
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+        }
+    }
+
     $(document).on('click', '.question', function () {
         $(this).children('img').toggleClass('selected');
         $(this.nextElementSibling).toggleClass('selected');

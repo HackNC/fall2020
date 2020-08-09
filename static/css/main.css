@@ -17,6 +17,70 @@ body {
   margin: 0;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal-content h2 {
+  text-align: center;
+}
+.modal-content p {
+  padding: 20px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -335,50 +399,50 @@ nav ul a:hover::before {
   display: block;
   margin: 0 auto;
 }
-.tracks .nessie {
+.tracks #nessie {
   left: 10.5%;
   top: 14.5%;
 }
-.tracks .nessie img {
+.tracks #nessie img {
   height: 4.5vw;
 }
-.tracks .boatsquatch {
+.tracks #boatsquatch {
   top: 48%;
   left: 7%;
 }
-.tracks .boatsquatch img {
+.tracks #boatsquatch img {
   height: 5.5vw;
 }
-.tracks .krakenlake {
+.tracks #krakenlake {
   left: 28.8%;
   top: 28.5%;
 }
-.tracks .krakenlake img {
+.tracks #krakenlake img {
   height: 11.1vw;
 }
-.tracks .krakenlake h2 {
+.tracks #krakenlake h2 {
   position: relative;
   top: -3.5vw;
 }
-.tracks .mothman {
+.tracks #mothman {
   left: 50%;
   top: 9.5%;
 }
-.tracks .mothman img {
+.tracks #mothman img {
   height: 7vw;
 }
-.tracks .yeti {
+.tracks #yeti {
   left: 76%;
   top: 9.5%;
 }
-.tracks .yeti img {
+.tracks #yeti img {
   height: 8vw;
 }
-.tracks .ram {
+.tracks #ram {
   left: 75%;
   top: 60%;
 }
-.tracks .ram img {
+.tracks #ram img {
   height: 10.5vw;
 }
 

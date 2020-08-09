@@ -51,6 +51,19 @@ body {
   padding: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .modal {
+    padding-top: 25px;
+    z-index: 1001;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+  .modal-content h2 {
+    margin-top: 30px;
+  }
+}
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -394,6 +407,17 @@ nav ul a:hover::before {
   max-width: 10vw;
   margin: 0 auto;
 }
+@media only screen and (max-width: 600px) {
+  .tracks h2 {
+    position: relative;
+    bottom: 4px;
+  }
+  @supports (-webkit-touch-callout: none) {
+    .tracks h2 {
+      max-width: 17.5vw;
+    }
+  }
+}
 .tracks .background {
   height: 40vw;
   display: block;
@@ -402,6 +426,15 @@ nav ul a:hover::before {
 .tracks #nessie {
   left: 10.5%;
   top: 14.5%;
+}
+@supports (-webkit-touch-callout: none) {
+  .tracks #nessie {
+    left: 7%;
+    top: 10%;
+  }
+  .tracks #nessie h2 {
+    max-width: 12.5vw;
+  }
 }
 .tracks #nessie img {
   height: 4.5vw;
@@ -424,9 +457,19 @@ nav ul a:hover::before {
   position: relative;
   top: -3.5vw;
 }
+@supports (-webkit-touch-callout: none) {
+  .tracks #krakenlake h2 {
+    top: -4.8vw;
+  }
+}
 .tracks #mothman {
   left: 50%;
   top: 9.5%;
+}
+@supports (-webkit-touch-callout: none) {
+  .tracks #mothman {
+    left: 47%;
+  }
 }
 .tracks #mothman img {
   height: 7vw;
@@ -434,6 +477,12 @@ nav ul a:hover::before {
 .tracks #yeti {
   left: 76%;
   top: 9.5%;
+}
+@supports (-webkit-touch-callout: none) {
+  .tracks #yeti {
+    left: 70%;
+    top: 8%;
+  }
 }
 .tracks #yeti img {
   height: 8vw;
@@ -452,6 +501,11 @@ nav ul a:hover::before {
 }
 .schedule p {
   margin-bottom: 120px;
+}
+@media only screen and (max-width: 600px) {
+  .schedule p {
+    margin-bottom: 50px;
+  }
 }
 
 .sch-img {
@@ -480,7 +534,12 @@ h3 {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: none;
+}
+table.active {
+  display: table;
 }
 
 tbody tr:first-child td:first-child {
@@ -502,6 +561,12 @@ tbody tr:last-child td:last-child {
 td,
 th {
   padding: 6px;
+}
+@supports (-webkit-touch-callout: none) {
+  td,
+th {
+    padding: 3px;
+  }
 }
 
 .day-selector {
@@ -535,13 +600,6 @@ th {
   transition: background-color 0.15s ease-in-out;
   background-color: #477215;
   color: #F7F2D8;
-}
-
-.sch-table {
-  display: none;
-}
-.sch-table.active {
-  display: table;
 }
 
 .faq-title-img {

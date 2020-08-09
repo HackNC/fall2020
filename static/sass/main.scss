@@ -57,6 +57,21 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .modal {
+        padding-top: 25px;
+        z-index: 1001;
+    }
+
+    .modal-content {
+        width: 90%;
+
+        h2 {
+            margin-top: 30px;
+        }
+    }
+}
+
 @-webkit-keyframes animatetop {
     from {
         top: -300px;
@@ -432,6 +447,17 @@ nav {
         margin: 0 auto;
     }
 
+    @media only screen and (max-width: 600px) {
+        h2 {
+            position: relative;
+            bottom: 4px;
+
+            @supports (-webkit-touch-callout: none) {
+                max-width: 17.5vw;
+            }
+        }
+    }
+
     .background {
         height: 40vw;
         display: block;
@@ -441,6 +467,15 @@ nav {
     #nessie {
         left: 10.5%;
         top: 14.5%;
+
+        @supports (-webkit-touch-callout: none) {
+            left: 7%; 
+            top: 10%; 
+
+            h2 {
+                max-width: 12.5vw;
+            }
+        }
 
         img {
             height: 4.5vw;
@@ -467,12 +502,20 @@ nav {
         h2 {
             position: relative;
             top: -3.5vw;
+
+            @supports (-webkit-touch-callout: none) {
+                top: -4.8vw;
+            }
         }
     }
 
     #mothman {
         left: 50%;
         top: 9.5%;
+
+        @supports (-webkit-touch-callout: none) {
+            left: 47%;
+        }
 
         img {
             height: 7vw;
@@ -482,6 +525,11 @@ nav {
     #yeti {
         left: 76%;
         top: 9.5%;
+
+        @supports (-webkit-touch-callout: none) {
+            left: 70%;
+            top: 8%;
+        }
 
         img {
             height: 8vw;
@@ -504,6 +552,10 @@ nav {
 
     p {
         margin-bottom: 120px;
+
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -533,7 +585,13 @@ h3 {
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: none;
+
+    &.active {
+        display: table;
+    }
 }
 
 tbody tr:first-child td:first-child {
@@ -555,6 +613,10 @@ tbody tr:last-child td:last-child {
 td,
 th {
     padding: 6px;
+
+    @supports(-webkit-touch-callout: none) {
+        padding: 3px;
+    }
 }
 
 .day-selector {
@@ -592,14 +654,6 @@ th {
         transition: background-color 0.15s ease-in-out;
         background-color: $schedule-button-active;
         color: $schedule-light-text;
-    }
-}
-
-.sch-table {
-    display: none;
-
-    &.active {
-        display: table;
     }
 }
 

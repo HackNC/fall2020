@@ -404,7 +404,9 @@ nav {
         &.wrapper {
             position: relative;
             height: fit-content;
+            height: min-content;
             width: fit-content;
+            width: min-content;
             margin: 0 auto;
         }
 
@@ -505,6 +507,7 @@ nav {
 
             @supports (-webkit-touch-callout: none) {
                 top: -4.8vw;
+                left: -0.5vw;
             }
         }
     }
@@ -680,6 +683,7 @@ th {
 .faq-row,
 .sch-row {
     display: flex;
+    display: -webkit-flex;
 }
 
 .faq-col {
@@ -809,10 +813,10 @@ th {
 }
 
 footer {
-    text-align: center;
     height: 10vh;
     background: $footer-background;
     color: $footer-text;
+    overflow: hidden;
 
     a {
         color: $footer-text;
@@ -820,5 +824,6 @@ footer {
 
     u {
         text-decoration: none;
+        font-weight: bold;
     }
 }

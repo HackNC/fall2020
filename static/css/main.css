@@ -371,7 +371,9 @@ nav ul a:hover::before {
 .tracks div.wrapper {
   position: relative;
   height: fit-content;
+  height: min-content;
   width: fit-content;
+  width: min-content;
   margin: 0 auto;
 }
 @media only screen and (max-width: 993px) {
@@ -460,6 +462,7 @@ nav ul a:hover::before {
 @supports (-webkit-touch-callout: none) {
   .tracks #krakenlake h2 {
     top: -4.8vw;
+    left: -0.5vw;
   }
 }
 .tracks #mothman {
@@ -624,6 +627,7 @@ th {
 .faq-row,
 .sch-row {
   display: flex;
+  display: -webkit-flex;
 }
 
 .faq-col {
@@ -744,16 +748,17 @@ th {
   }
 }
 footer {
-  text-align: center;
   height: 10vh;
-  background: #E7D8BC;
-  color: #4f3426;
+  background: #4f3426;
+  color: white;
+  overflow: hidden;
 }
 footer a {
-  color: #4f3426;
+  color: white;
 }
 footer u {
   text-decoration: none;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

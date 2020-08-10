@@ -21,10 +21,15 @@ body {
     margin: 0;
 }
 
+.mentor {
+    background: $b-cream;
+    color: $b-brown;
+}
+
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     padding-top: 200px;
     left: 0;
     top: 0;
@@ -35,6 +40,7 @@ body {
 }
 
 .modal-content {
+    z-index: 101;
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -54,6 +60,43 @@ body {
 
     p {
         padding: 20px;
+    }
+
+    &.get-involved {
+        div {
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            max-width: 60%;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                background: $nav-emphasis;
+                color: white;
+                text-align: center;
+                font-size: 3vw;
+                flex: 0 1 50%;
+                margin: 2px;
+                border-radius: 5px;
+                transition-duration: 0.2s;
+                padding: 5px;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 6vw;
+                }
+
+                &:hover {
+                    background-color: #11539e;
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+            // position: relative;
+            // top: 20px;
+        }
     }
 }
 
@@ -214,6 +257,7 @@ a {
         text-align: center;
 
         .apply {
+            text-decoration: none;
             display: block;
             background-color: $nav-emphasis;
             color: white;
@@ -301,7 +345,7 @@ nav {
     font-family: "Quicksand";
     box-shadow: 0px 0px 8px #000000;
     top: 0;
-    z-index: 100;
+    z-index: 99;
     position: -webkit-sticky;
     position: sticky;
     text-align: center;
@@ -317,6 +361,7 @@ nav {
         padding: 0px;
 
         a {
+            cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
             display: inline-block;
@@ -331,13 +376,15 @@ nav {
             &.apply {
                 background-color: $nav-emphasis;
                 height: 27px;
-                border-radius: 5px;
                 padding: 0px 5px;
-                transition: transform 0.15s;
-                font-size: 1.2rem;
-                line-height: normal;
+                margin: 0px 10px;
+                border-radius: 5px;
                 position: relative;
                 top: 50%;
+                font-size: 1.2rem;
+                font-weight: bold;
+                line-height: normal;
+                transition: transform 0.15s;
                 transform: translateY(-50%);
                 -webkit-transform: translateY(-50%);
 
@@ -471,8 +518,8 @@ nav {
         top: 14.5%;
 
         @supports (-webkit-touch-callout: none) {
-            left: 7%; 
-            top: 10%; 
+            left: 7%;
+            top: 10%;
 
             h2 {
                 max-width: 12.5vw;
@@ -617,14 +664,14 @@ td,
 th {
     padding: 6px;
 
-    @supports(-webkit-touch-callout: none) {
+    @supports (-webkit-touch-callout: none) {
         padding: 3px;
     }
 }
 
 .day-selector {
     cursor: pointer;
-    flex: 0 0 50%;
+    flex: 0 1 50%;
     -webkit-flex: 0 0 50%;
     text-align: center;
     background-color: $schedule-button;
@@ -816,7 +863,10 @@ footer {
     height: 10vh;
     background: $footer-background;
     color: $footer-text;
-    overflow: hidden;
+
+    @media only screen and (max-width: 600px) {
+        height: 15vh;
+    }
 
     a {
         color: $footer-text;

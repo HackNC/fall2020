@@ -1,69 +1,87 @@
 $(document).ready(function () {
-    $(document).on('click', '.question', function () {
-        $(this).children('img').toggleClass('selected');
-        $(this.nextElementSibling).toggleClass('selected');
-    });
+    document.getElementById('nessie').onclick = function () {
+        document.getElementById('nessie-modal').style.display = "block";
+    }
+
+    document.getElementById('boatsquatch').onclick = function () {
+        document.getElementById('boatsquatch-modal').style.display = "block";
+    }
+
+    document.getElementById('krakenlake').onclick = function () {
+        document.getElementById('krakenlake-modal').style.display = "block";
+    }
+
+    document.getElementById('mothman').onclick = function () {
+        document.getElementById('mothman-modal').style.display = "block";
+    }
+
+    document.getElementById('yeti').onclick = function () {
+        document.getElementById('yeti-modal').style.display = "block";
+    }
+
+    document.getElementById('ram').onclick = function () {
+        document.getElementById('ram-modal').style.display = "block";
+    }
+
+    document.getElementById('mobile-get-involved').onclick = function () {
+        document.getElementById('get-involved-modal').style.display = "block";
+    }
+
+    document.getElementById('get-involved').onclick = function () {
+        document.getElementById('get-involved-modal').style.display = "block";
+    }
+
+
+    $('.close').on('click', function () {
+        $(this).closest('.modal').css("display", "none");
+    })
+
+    window.onclick = function (event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+        }
+    }
 
     $.getJSON("/static/assets/faq.json", function (data) {
+        data.forEach(function (question) {
+            var $faq = $('<div>');
+            var $header = $('<h2>')
 
-        var i = 0;
-
-        var $row = $('<div>', { "class": "faq-row" });
-
-        data.forEach(function (section) {
-            var $col = $('<div>', { "class": "faq-col" });
-
-            $col.append(
-                $('<h3>', {"style": "text-align: center"})
-                    .text(section['header'])
-            );
-
-            section['questions'].forEach(function (question) {
-                $col.append(
-                    $('<div>', { "class": "question" }).append(
-                        $('<img>', { "src": "static/assets/images/triangle.png" }),
-                        $('<h5>').text(question['question'])
-                    )
-                )
-                $col.append(
-                    $('<div>', { "class": "answer" }).append(
-                        $('<p>').text(question['answer'])
-                    )
-                )
-            });
-
-            $row.append($col);
-            if (++i % 2 === 0) {
-                $("#faq-container").append($row);
-                $row = $('<div>', { "class": "faq-row" });
-            }
+            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg" }));
+            $header.append(question['question']);
+            $faq.append($header);
+            $faq.append(
+                $('<p>')
+                    .html(question['answer'])
+            )
+            $('#faq-container').append($faq);
         });
     });
 
     $.getJSON("/static/assets/schedule.json", function (data) {
 
         var $header = $('<div>', { "class": "sch-row" });
-        var $tables = $('<div>');
+        var $tables = $('<div>', { "style": "position: relative;" });
 
         var i = 0;
 
         data.forEach(function (date) {
             $header.append(
-                $('<h3>', {"class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i})
+                $('<button>', { "class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i })
                     .text(date['date'])
                     .on('click', function () {
-                        if(!$(this).hasClass('active')) {
-                            $('.day-selector').each(function() {
+                        if (!$(this).hasClass('active')) {
+                            $('.day-selector').each(function () {
                                 $(this).toggleClass('active');
                             });
-                            $('.sch-table').each(function() {
+                            $('table').each(function () {
                                 $(this).toggleClass('active');
                             });
                         }
                     })
             );
 
-            var $table = $('<table>', {"class": (i == 0 ? "sch-table active" : "sch-table"), "id": "table" + i++});
+            var $table = $('<table>', { "class": (i == 0 ? "active" : ""), "id": "table" + i++ });
             var $schBody = $('<tbody>');
 
             $table.append(
@@ -79,7 +97,7 @@ $(document).ready(function () {
 
             date['schedule'].forEach(function (element) {
                 $schBody.append(
-                    $('<tr>', {"class" : (j++ % 2 == 0 ? "table-row-even" : "table-row-odd")})
+                    $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
                         .append($('<td>').html(element['time']))
                         .append($('<td>').html(element['event']))
                         .append($('<td>').html(element['location']))
@@ -91,13 +109,16 @@ $(document).ready(function () {
         });
 
         $("#schedule-container").append($header);
+        $tables.append(
+            $('<img>', { "class": "sch-img hide-on-med-and-down", "src": "/static/assets/images/art/kraken.svg" })
+        );
         $("#schedule-container").append($tables);
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-    
+
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });

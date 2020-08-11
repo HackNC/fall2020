@@ -1,42 +1,34 @@
 [
     {
-        "header": "General",
-        "questions": [
-            {
-                "question": "What is a hackathon?",
-                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
-            },
-            {
-                "question": "What is a hackathon?",
-                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
-            }
-        ]
+        "question": "What is a hackathon?",
+        "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
     },
     {
-        "header": "Virtual",
-        "questions": [
-            {
-                "question": "What is a hackathon?",
-                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
-            }
-        ]
+        "question": "How does an online hackathon work?",
+        "answer": "We are working around the clock to make sure that this year’s virtual hackathon is as normal as possible. You will still be able to meet new people, work on awesome projects, and network with our sponsors. We will announce more information on the specifics as we get closer to HackNC."
     },
     {
-        "header": "General",
-        "questions": [
-            {
-                "question": "What is a hackathon?",
-                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
-            }
-        ]
+        "question": "Can I hack?",
+        "answer": "High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers. Professionals interested in mentorship should click the \"Get Involved\" link in the navbar to get started."
     },
     {
-        "header": "General",
-        "questions": [
-            {
-                "question": "What is a hackathon?",
-                "answer": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
-            }
-        ]
+        "question": "What is a track?",
+        "answer": "At a hackathon, a track is designed to help focus your ideas into one specific subject area. We have six tracks for you to choose from, including a general one intended for projects that don’t fit into one of the other five. "
+    },
+    {
+        "question": "How do teams work?",
+        "answer": "Teams can be organized prior to HackNC or during the event itself. We will host team building and pitch events before hacking begins. We don’t hold a strict limit on your team size, but we strongly recommend around 3-4 members. Prizes will be limited to a maximum of 4 members."
+    },
+    {
+        "question": "Can I do a hardware hack?",
+        "answer": "Unfortunately, we are unable to provide hardware this year due to the virtual nature of our hackathon. However, you are still welcome to use your own hardware if you really want to!"
+    },
+    {
+        "question": "Can I use old code?",
+        "answer": "You may use all the publicly available code and APIs that you want, but the code you will be judged on at the end of the hackathon must be new."
+    },
+    {
+        "question": "You didn’t answer my question!",
+        "answer": "Email us at <a target='_blank' href='mailto:hello@hacknc.com'>hello@hacknc.com</a>. We’ll be happy to answer all of your questions."
     }
 ]

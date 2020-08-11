@@ -47,7 +47,7 @@ $(document).ready(function () {
             var $faq = $('<div>');
             var $header = $('<h2>')
 
-            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg" }));
+            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg", "alt": "Lantern" }));
             $header.append(question['question']);
             $faq.append($header);
             $faq.append(

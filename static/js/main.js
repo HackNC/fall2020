@@ -42,44 +42,19 @@ $(document).ready(function () {
         }
     }
 
-    $(document).on('click', '.question', function () {
-        $(this).children('img').toggleClass('selected');
-        $(this.nextElementSibling).toggleClass('selected');
-    });
-
     $.getJSON("/static/assets/faq.json", function (data) {
+        data.forEach(function (question) {
+            var $faq = $('<div>');
+            var $header = $('<h2>')
 
-        var i = 0;
-
-        var $row = $('<div>', { "class": "faq-row" });
-
-        data.forEach(function (section) {
-            var $col = $('<div>', { "class": "faq-col" });
-
-            $col.append(
-                $('<h3>', { "style": "text-align: center" })
-                    .text(section['header'])
-            );
-
-            section['questions'].forEach(function (question) {
-                $col.append(
-                    $('<div>', { "class": "question" }).append(
-                        $('<img>', { "src": "static/assets/images/triangle.png" }),
-                        $('<h5>').text(question['question'])
-                    )
-                )
-                $col.append(
-                    $('<div>', { "class": "answer" }).append(
-                        $('<p>').text(question['answer'])
-                    )
-                )
-            });
-
-            $row.append($col);
-            if (++i % 2 === 0) {
-                $("#faq-container").append($row);
-                $row = $('<div>', { "class": "faq-row" });
-            }
+            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg" }));
+            $header.append(question['question']);
+            $faq.append($header);
+            $faq.append(
+                $('<p>')
+                    .html(question['answer'])
+            )
+            $('#faq-container').append($faq);
         });
     });
 

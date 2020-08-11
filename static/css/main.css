@@ -154,9 +154,9 @@ h1 {
   font-size: 4vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
   h1 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 }
 a {
@@ -645,18 +645,9 @@ th {
   color: #F7F2D8;
 }
 
-.faq-title-img {
-  position: relative;
-  top: 30px;
-  height: 120px;
-}
-.faq-title-img.mirrored {
-  transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-}
-
-.faq-title {
-  display: inline;
+.sch-row {
+  display: flex;
+  display: -webkit-flex;
 }
 
 .faq {
@@ -664,65 +655,45 @@ th {
   color: #4f3426;
 }
 
-.faq-row,
-.sch-row {
+#faq-container {
   display: flex;
-  display: -webkit-flex;
+  flex-wrap: wrap;
+  margin: -1vw;
+  align-items: flex-start;
 }
-
-.faq-col {
-  flex: 50%;
-  margin-right: 10px;
+#faq-container div {
+  flex: 0 1 50%;
+  padding: 0.7vw 1vw;
+  box-sizing: border-box;
 }
-
-@media only screen and (max-width: 600px) {
-  .faq-row {
-    display: block;
-  }
-
-  .faq-col {
-    margin-right: 0px;
+@media only screen and (max-width: 993px) {
+  #faq-container div {
+    flex: 0 1 100%;
   }
 }
-.question {
-  cursor: pointer;
-  display: inline-block;
-}
-.question h5 {
-  float: left;
-  font-size: 1.3rem;
-  margin: 10px 0px;
-}
-.question img {
-  position: relative;
-  top: 8px;
-  line-height: inherit;
-  float: left;
-  height: 30px;
-  width: 30px;
-  transition: transform 0.4s cubic-bezier(0, 1, 0, 1);
-}
-.question img.selected {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  transition: transform 0.35s ease-in-out;
-}
-
-.answer {
-  padding-left: 30px;
-  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
-  max-height: 0px;
-  overflow: hidden;
-  font-size: 1.2rem;
-  margin-top: 0px;
-}
-.answer p {
-  margin-top: 5px;
+#faq-container div h2 {
+  font-size: 2rem;
+  text-align: left;
+  display: flex;
   margin-bottom: 10px;
+  align-items: center;
 }
-.answer.selected {
-  max-height: 500px;
-  transition: max-height 0.5s ease-in-out;
+@media only screen and (max-width: 993px) {
+  #faq-container div h2 {
+    font-size: 2rem;
+  }
+}
+#faq-container div h2 img {
+  height: 40px;
+  margin-right: 20px;
+}
+#faq-container div p {
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 993px) {
+  #faq-container div p {
+    font-size: 1.5rem;
+  }
 }
 
 #faq-footer {

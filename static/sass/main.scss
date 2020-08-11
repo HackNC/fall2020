@@ -791,31 +791,27 @@ th {
 }
 
 .tier-4 {
-    max-width: 80%;
-    min-width: 280px;
-    max-height: 250px;
+    width: 80%;
+    min-width: 350px;
 }
 
 .tier-3 {
-    max-width: 50%;
-    min-width: 240px;
-    max-height: 180px;
+    width: 40%;
+    min-width: 260px;
 }
 
 .tier-2 {
-    max-width: 30%;
-    min-width: 240px;
-    max-height: 140px;
+    width: 30%;
+    min-width: 180px;
 }
 
 .tier-1 {
-    max-width: 17.5%;
-    min-width: 180px;
-    max-height: 100px;
+    width: 20%;
+    min-width: 125px;
 }
 
 .sponsor-row {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -94,13 +94,11 @@ body {
 
         p {
             text-align: center;
-            // position: relative;
-            // top: 20px;
         }
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
     .modal {
         padding-top: 25px;
         z-index: 1001;
@@ -179,12 +177,15 @@ h1 {
     }
 }
 
+p {
+    font-size: 20px;
+}
+
 a {
     color: red;
 }
 
 .section {
-    font-size: 1.3em;
     padding: 35px 0px 5px 0px;
 }
 
@@ -245,7 +246,7 @@ a {
     }
 
     .banner-info {
-        height: fit-content;
+        height: max-content;
         width: 80%;
         margin: auto;
         position: absolute;
@@ -262,11 +263,15 @@ a {
             background-color: $nav-emphasis;
             color: white;
             font-weight: bold;
-            width: fit-content;
+            width: max-content;
             padding: 5px 10px;
             margin: 10px auto;
             border-radius: 5px;
             font-size: 3vw;
+
+            &:last-child {
+                margin-bottom: 5vw;
+            }
         }
 
         .tagline {
@@ -302,7 +307,7 @@ a {
     }
 
     .banner-info {
-        height: fit-content;
+        height: max-content;
         width: 80%;
         margin: auto;
         position: absolute;
@@ -439,6 +444,10 @@ nav {
     p {
         margin-bottom: 0px;
     }
+
+    @media only screen and (max-width: 993px) and (orientation: landscape) {
+        padding-top: 12.5vw;
+    }
 }
 
 .tracks {
@@ -450,59 +459,43 @@ nav {
 
         &.wrapper {
             position: relative;
-            height: fit-content;
-            height: min-content;
-            width: fit-content;
-            width: min-content;
+            height: max-content;
+            width: max-content;
             margin: 0 auto;
-        }
-
-        @media only screen and (max-width: 993px) {
-            &.wrapper {
-                transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                margin-top: 7.5vw;
-                margin-bottom: 6vw;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            &.wrapper {
-                transform: scale(1.65);
-                -webkit-transform: scale(1.65);
-                margin-top: 9vw;
-                margin-bottom: 7vw;
-            }
         }
 
         &.track {
             position: absolute;
             cursor: pointer;
             transition: all ease-out 0.5s;
-            width: fit-content;
 
             &:hover {
                 transform: scale(1.1);
                 -webkit-transform: scale(1.1);
             }
-        }
-    }
 
-    h2 {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.1vw;
-        max-width: 10vw;
-        margin: 0 auto;
-    }
+            h2 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.1vw;
+                max-width: 10vw;
+                margin: 0 auto;
+            }
 
-    @media only screen and (max-width: 600px) {
-        h2 {
-            position: relative;
-            bottom: 4px;
+            @media only screen and (max-width: 993px) {
+                display: block;
+                position: initial;
+                margin: 5vw auto;
+                width: 80vw;
 
-            @supports (-webkit-touch-callout: none) {
-                max-width: 17.5vw;
+                img {
+                    height: 30vw !important;
+                }
+
+                h2 {
+                    font-size: 5vw;
+                    max-width: inherit;
+                }
             }
         }
     }
@@ -516,15 +509,6 @@ nav {
     #nessie {
         left: 10.5%;
         top: 14.5%;
-
-        @supports (-webkit-touch-callout: none) {
-            left: 7%;
-            top: 10%;
-
-            h2 {
-                max-width: 12.5vw;
-            }
-        }
 
         img {
             height: 4.5vw;
@@ -552,9 +536,8 @@ nav {
             position: relative;
             top: -3.5vw;
 
-            @supports (-webkit-touch-callout: none) {
-                top: -4.8vw;
-                left: -0.5vw;
+            @media only screen and (max-width: 993px) {
+                top: 0;
             }
         }
     }
@@ -562,10 +545,6 @@ nav {
     #mothman {
         left: 50%;
         top: 9.5%;
-
-        @supports (-webkit-touch-callout: none) {
-            left: 47%;
-        }
 
         img {
             height: 7vw;
@@ -575,11 +554,6 @@ nav {
     #yeti {
         left: 76%;
         top: 9.5%;
-
-        @supports (-webkit-touch-callout: none) {
-            left: 70%;
-            top: 8%;
-        }
 
         img {
             height: 8vw;
@@ -738,7 +712,7 @@ th {
             display: flex;
             margin-bottom: 10px;
             align-items: center;
-            
+
             @media only screen and (max-width: 993px) {
                 font-size: 2rem;
             }
@@ -746,14 +720,6 @@ th {
             img {
                 height: 40px;
                 margin-right: 20px;
-            }
-        }
-
-        p {
-            font-size: 1.2rem;
-
-            @media only screen and (max-width: 993px) {
-                font-size: 1.5rem;
             }
         }
     }
@@ -828,6 +794,7 @@ footer {
     height: 10vh;
     background: $footer-background;
     color: $footer-text;
+    font-size: 1.3rem;
 
     @media only screen and (max-width: 600px) {
         height: 15vh;

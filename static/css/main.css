@@ -87,7 +87,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
   .modal {
     padding-top: 25px;
     z-index: 1001;
@@ -159,12 +159,15 @@ h1 {
     font-size: 10vw;
   }
 }
+p {
+  font-size: 20px;
+}
+
 a {
   color: red;
 }
 
 .section {
-  font-size: 1.3em;
   padding: 35px 0px 5px 0px;
 }
 
@@ -222,7 +225,7 @@ a {
   }
 
   .banner-info {
-    height: fit-content;
+    height: max-content;
     width: 80%;
     margin: auto;
     position: absolute;
@@ -239,11 +242,14 @@ a {
     background-color: #116f9e;
     color: white;
     font-weight: bold;
-    width: fit-content;
+    width: max-content;
     padding: 5px 10px;
     margin: 10px auto;
     border-radius: 5px;
     font-size: 3vw;
+  }
+  .banner-info .apply:last-child {
+    margin-bottom: 5vw;
   }
   .banner-info .tagline {
     font-size: 3vw;
@@ -275,7 +281,7 @@ a {
   }
 
   .banner-info {
-    height: fit-content;
+    height: max-content;
     width: 80%;
     margin: auto;
     position: absolute;
@@ -400,6 +406,11 @@ nav ul a:hover::before {
 .about p {
   margin-bottom: 0px;
 }
+@media only screen and (max-width: 993px) and (orientation: landscape) {
+  .about {
+    padding-top: 12.5vw;
+  }
+}
 
 .tracks {
   background: #F7F2D8;
@@ -410,54 +421,39 @@ nav ul a:hover::before {
 }
 .tracks div.wrapper {
   position: relative;
-  height: fit-content;
-  height: min-content;
-  width: fit-content;
-  width: min-content;
+  height: max-content;
+  width: max-content;
   margin: 0 auto;
-}
-@media only screen and (max-width: 993px) {
-  .tracks div.wrapper {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    margin-top: 7.5vw;
-    margin-bottom: 6vw;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .tracks div.wrapper {
-    transform: scale(1.65);
-    -webkit-transform: scale(1.65);
-    margin-top: 9vw;
-    margin-bottom: 7vw;
-  }
 }
 .tracks div.track {
   position: absolute;
   cursor: pointer;
   transition: all ease-out 0.5s;
-  width: fit-content;
 }
 .tracks div.track:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
-.tracks h2 {
+.tracks div.track h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1vw;
   max-width: 10vw;
   margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
-  .tracks h2 {
-    position: relative;
-    bottom: 4px;
+@media only screen and (max-width: 993px) {
+  .tracks div.track {
+    display: block;
+    position: initial;
+    margin: 5vw auto;
+    width: 80vw;
   }
-  @supports (-webkit-touch-callout: none) {
-    .tracks h2 {
-      max-width: 17.5vw;
-    }
+  .tracks div.track img {
+    height: 30vw !important;
+  }
+  .tracks div.track h2 {
+    font-size: 5vw;
+    max-width: inherit;
   }
 }
 .tracks .background {
@@ -468,15 +464,6 @@ nav ul a:hover::before {
 .tracks #nessie {
   left: 10.5%;
   top: 14.5%;
-}
-@supports (-webkit-touch-callout: none) {
-  .tracks #nessie {
-    left: 7%;
-    top: 10%;
-  }
-  .tracks #nessie h2 {
-    max-width: 12.5vw;
-  }
 }
 .tracks #nessie img {
   height: 4.5vw;
@@ -499,20 +486,14 @@ nav ul a:hover::before {
   position: relative;
   top: -3.5vw;
 }
-@supports (-webkit-touch-callout: none) {
+@media only screen and (max-width: 993px) {
   .tracks #krakenlake h2 {
-    top: -4.8vw;
-    left: -0.5vw;
+    top: 0;
   }
 }
 .tracks #mothman {
   left: 50%;
   top: 9.5%;
-}
-@supports (-webkit-touch-callout: none) {
-  .tracks #mothman {
-    left: 47%;
-  }
 }
 .tracks #mothman img {
   height: 7vw;
@@ -520,12 +501,6 @@ nav ul a:hover::before {
 .tracks #yeti {
   left: 76%;
   top: 9.5%;
-}
-@supports (-webkit-touch-callout: none) {
-  .tracks #yeti {
-    left: 70%;
-    top: 8%;
-  }
 }
 .tracks #yeti img {
   height: 8vw;
@@ -687,14 +662,6 @@ th {
   height: 40px;
   margin-right: 20px;
 }
-#faq-container div p {
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 993px) {
-  #faq-container div p {
-    font-size: 1.5rem;
-  }
-}
 
 #faq-footer {
   background-image: url("/static/assets/images/art/borders.svg");
@@ -762,6 +729,7 @@ footer {
   height: 10vh;
   background: #4f3426;
   color: white;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
   footer {

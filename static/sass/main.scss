@@ -469,11 +469,6 @@ nav {
             cursor: pointer;
             transition: all ease-out 0.5s;
 
-            &:hover {
-                transform: scale(1.1);
-                -webkit-transform: scale(1.1);
-            }
-
             h2 {
                 text-transform: uppercase;
                 font-weight: bold;
@@ -484,18 +479,47 @@ nav {
 
             @media only screen and (max-width: 993px) {
                 display: block;
-                position: initial;
+                position: relative;
                 margin: 5vw auto;
                 width: 80vw;
 
                 img {
-                    height: 30vw !important;
+                    height: 30vw;
                 }
 
                 h2 {
                     font-size: 5vw;
                     max-width: inherit;
                 }
+            }
+
+            @media only screen and (min-width: 993px) {
+                &:hover {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                }
+            }
+
+            p {
+                max-height: 0px;
+                transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+                overflow: hidden;
+                display: none;
+
+                @media only screen and (max-width: 993px) {
+                    display: block;
+                }
+
+                &.visible {
+                    margin-bottom: 50px;
+                    max-height: 350px;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            &.focus {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
             }
         }
     }
@@ -506,66 +530,68 @@ nav {
         margin: 0 auto;
     }
 
-    #nessie {
-        left: 10.5%;
-        top: 14.5%;
+    @media only screen and (min-width: 993px) {
+        #nessie {
+            left: 10.5%;
+            top: 14.5%;
 
-        img {
-            height: 4.5vw;
-        }
-    }
-
-    #boatsquatch {
-        top: 48%;
-        left: 7%;
-
-        img {
-            height: 5.5vw;
-        }
-    }
-
-    #krakenlake {
-        left: 28.8%;
-        top: 28.5%;
-
-        img {
-            height: 11.1vw;
-        }
-
-        h2 {
-            position: relative;
-            top: -3.5vw;
-
-            @media only screen and (max-width: 993px) {
-                top: 0;
+            img {
+                height: 4.5vw;
             }
         }
-    }
 
-    #mothman {
-        left: 50%;
-        top: 9.5%;
+        #boatsquatch {
+            top: 48%;
+            left: 7%;
 
-        img {
-            height: 7vw;
+            img {
+                height: 5.5vw;
+            }
         }
-    }
 
-    #yeti {
-        left: 76%;
-        top: 9.5%;
+        #krakenlake {
+            left: 28.8%;
+            top: 28.5%;
 
-        img {
-            height: 8vw;
+            img {
+                height: 11.1vw;
+            }
+
+            h2 {
+                position: relative;
+                top: -3.5vw;
+
+                @media only screen and (max-width: 993px) {
+                    top: 0;
+                }
+            }
         }
-    }
 
-    #ram {
-        left: 75%;
-        top: 60%;
+        #mothman {
+            left: 50%;
+            top: 9.5%;
 
-        img {
-            height: 10.5vw;
+            img {
+                height: 7vw;
+            }
+        }
+
+        #yeti {
+            left: 76%;
+            top: 9.5%;
+
+            img {
+                height: 8vw;
+            }
+        }
+
+        #ram {
+            left: 75%;
+            top: 60%;
+
+            img {
+                height: 10.5vw;
+            }
         }
     }
 }

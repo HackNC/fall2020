@@ -1,26 +1,16 @@
 $(document).ready(function () {
-    document.getElementById('nessie').onclick = function () {
-        document.getElementById('nessie-modal').style.display = "block";
-    }
+    var tracks = document.getElementsByClassName('track');
 
-    document.getElementById('boatsquatch').onclick = function () {
-        document.getElementById('boatsquatch-modal').style.display = "block";
-    }
-
-    document.getElementById('krakenlake').onclick = function () {
-        document.getElementById('krakenlake-modal').style.display = "block";
-    }
-
-    document.getElementById('mothman').onclick = function () {
-        document.getElementById('mothman-modal').style.display = "block";
-    }
-
-    document.getElementById('yeti').onclick = function () {
-        document.getElementById('yeti-modal').style.display = "block";
-    }
-
-    document.getElementById('ram').onclick = function () {
-        document.getElementById('ram-modal').style.display = "block";
+    for (var i = 0; i < tracks.length; i++) {
+        tracks[i].onclick = function () {
+            if (window.innerWidth > 993) {
+                var id = this.id + '-modal';
+                document.getElementById(id).style.display = "block";
+            } else {
+                this.classList.toggle('focus');
+                this.lastElementChild.classList.toggle('visible');
+            }
+        }
     }
 
     document.getElementById('mobile-get-involved').onclick = function () {
@@ -30,7 +20,6 @@ $(document).ready(function () {
     document.getElementById('get-involved').onclick = function () {
         document.getElementById('get-involved-modal').style.display = "block";
     }
-
 
     $('.close').on('click', function () {
         $(this).closest('.modal').css("display", "none");

@@ -8,6 +8,14 @@
         "answer": "We are working around the clock to make sure that this year’s virtual hackathon is as normal as possible. You will still be able to meet new people, work on awesome projects, and network with our sponsors. We will announce more information on the specifics as we get closer to HackNC."
     },
     {
+        "question": "Will there still be swag?",
+        "answer": "Yes, although we are only able to ship to within the continental United States. Make sure to indicate that you are interested in recieving swag when you apply."
+    },
+    {
+        "question": "What if I've never hacked before?",
+        "answer": "That's totally fine! We'll have plenty of resources to help you get started, including beginner workshops, mentors, and more."
+    },
+    {
         "question": "Can I hack?",
         "answer": "High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers. Professionals interested in mentorship should click the \"Get Involved\" link in the navbar to get started."
     },

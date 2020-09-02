@@ -682,6 +682,7 @@ th {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {

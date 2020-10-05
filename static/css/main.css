@@ -567,12 +567,12 @@ nav ul a:hover::before {
 
 .table-row-odd {
   color: #4f3426;
-  background: #adbf88;
+  background: #F7F2D8;
 }
 
 .table-row-even {
-  color: #F7F2D8;
-  background: #477215;
+  color: #4f3426;
+  background: #E7D8BC;
 }
 
 h3 {
@@ -581,6 +581,8 @@ h3 {
 }
 
 table {
+  font-size: 18px;
+  width: 100%;
   border-collapse: collapse;
   min-width: 100%;
   max-width: 100%;
@@ -618,17 +620,22 @@ th {
 }
 
 .day-selector {
+  font-family: "Quicksand";
   cursor: pointer;
-  flex: 0 1 50%;
-  -webkit-flex: 0 0 50%;
+  width: 33.3%;
   text-align: center;
-  background-color: #adbf88;
-  border: 3px solid #477215;
+  background-color: #F7F2D8;
+  border: 3px solid #E7D8BC;
   color: #4f3426;
   line-height: 1.5em;
-  font-size: 4vh;
+  font-size: 2.5vw;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 993px) {
+  .day-selector {
+    font-size: 5vw;
+  }
 }
 .day-selector:first-child {
   border-top-left-radius: 5px;
@@ -646,13 +653,8 @@ th {
 }
 .day-selector.active {
   transition: background-color 0.15s ease-in-out;
-  background-color: #477215;
-  color: #F7F2D8;
-}
-
-.sch-row {
-  display: flex;
-  display: -webkit-flex;
+  background-color: #E7D8BC;
+  color: #4f3426;
 }
 
 .faq {

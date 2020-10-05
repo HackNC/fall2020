@@ -634,6 +634,8 @@ h3 {
 }
 
 table {
+    font-size: 18px;
+    width: 100%;
     border-collapse: collapse;
     min-width: 100%;
     max-width: 100%;
@@ -670,17 +672,21 @@ th {
 }
 
 .day-selector {
+    font-family: "Quicksand";
     cursor: pointer;
-    flex: 0 1 50%;
-    -webkit-flex: 0 0 50%;
+    width: 33.3%;
     text-align: center;
     background-color: $schedule-button;
     border: 3px solid $schedule-button-active;
     color: $schedule-dark-text;
     line-height: 1.5em;
-    font-size: 4vh;
+    font-size: 2.5vw;
     margin-top: 10px;
     margin-bottom: 25px;
+
+    @media only screen and (max-width: 993px) {
+        font-size: 5vw;
+    }
 
     &:first-child {
         border-top-left-radius: 5px;
@@ -705,11 +711,6 @@ th {
         background-color: $schedule-button-active;
         color: $schedule-light-text;
     }
-}
-
-.sch-row {
-    display: flex;
-    display: -webkit-flex;
 }
 
 .faq {

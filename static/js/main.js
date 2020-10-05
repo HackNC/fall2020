@@ -47,62 +47,63 @@ $(document).ready(function () {
         });
     });
 
-    // $.getJSON("/static/assets/schedule.json", function (data) {
+    $.getJSON("/static/assets/schedule.json", function (data) {
 
-    //     var $header = $('<div>', { "class": "sch-row" });
-    //     var $tables = $('<div>', { "style": "position: relative;" });
+        var $header = $('<div>');
+        var $tables = $('<div>', { "style": "position: relative;" });
 
-    //     var i = 0;
+        var i = 0;
 
-    //     data.forEach(function (date) {
-    //         $header.append(
-    //             $('<button>', { "class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i })
-    //                 .text(date['date'])
-    //                 .on('click', function () {
-    //                     if (!$(this).hasClass('active')) {
-    //                         $('.day-selector').each(function () {
-    //                             $(this).toggleClass('active');
-    //                         });
-    //                         $('table').each(function () {
-    //                             $(this).toggleClass('active');
-    //                         });
-    //                     }
-    //                 })
-    //         );
+        data.forEach(function (date) {
+            $header.append(
+                $('<button>', { "class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i })
+                    .text(date['date'])
+                    .on('click', function () {
+                        $('.day-selector').each(function () {
+                            $(this).removeClass('active');
+                        }) 
+                        $('table').each(function() {
+                            $(this).removeClass('active');
+                        })
+                        $(this).addClass('active');
+                        let id = $(this).attr('id').slice(-1);
+                        $('#table' + id).addClass('active');
+                    })
+            );
 
-    //         var $table = $('<table>', { "class": (i == 0 ? "active" : ""), "id": "table" + i++ });
-    //         var $schBody = $('<tbody>');
+            var $table = $('<table>', { "class": (i == 0 ? "active" : ""), "id": "table" + i++ });
+            var $schBody = $('<tbody>');
 
-    //         $table.append(
-    //             $('<thead>').append(
-    //                 $('<tr>')
-    //                     .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time'))
-    //                     .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
-    //                     .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Location'))
-    //             )
-    //         );
+            $table.append(
+                $('<thead>').append(
+                    $('<tr>')
+                        .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time'))
+                        .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
+                        .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
+                )
+            );
 
-    //         var j = 0;
+            var j = 0;
 
-    //         date['schedule'].forEach(function (element) {
-    //             $schBody.append(
-    //                 $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
-    //                     .append($('<td>').html(element['time']))
-    //                     .append($('<td>').html(element['event']))
-    //                     .append($('<td>').html(element['location']))
-    //             )
-    //         });
+            date['schedule'].forEach(function (element) {
+                $schBody.append(
+                    $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
+                        .append($('<td>').html(element['time']))
+                        .append($('<td>').html(element['type']))
+                        .append($('<td>').html(element['event']))
+                )
+            });
 
-    //         $table.append($schBody);
-    //         $tables.append($table);
-    //     });
+            $table.append($schBody);
+            $tables.append($table);
+        });
 
-    //     $("#schedule-container").append($header);
-    //     $tables.append(
-    //         $('<img>', { "class": "sch-img hide-on-med-and-down", "src": "/static/assets/images/art/kraken.svg" })
-    //     );
-    //     $("#schedule-container").append($tables);
-    // });
+        $("#schedule-container").append($header);
+        $tables.append(
+            $('<img>', { "class": "sch-img hide-on-med-and-down", "src": "/static/assets/images/art/kraken.svg" })
+        );
+        $("#schedule-container").append($tables);
+    });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

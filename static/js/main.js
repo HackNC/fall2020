@@ -77,7 +77,7 @@ $(document).ready(function () {
             $table.append(
                 $('<thead>').append(
                     $('<tr>')
-                        .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time'))
+                        .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time (EST)'))
                         .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
                         .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
                 )

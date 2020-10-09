@@ -174,12 +174,21 @@ nav ul a {
 
 #links {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
-  color: #4f3426;
   font-size: 20px;
+}
+#links a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#links p {
+  margin: 3px 0 0 0;
+  color: #4f3426;
 }
 #links img {
   height: 2vw;
@@ -187,13 +196,29 @@ nav ul a {
   vertical-align: middle;
 }
 #links div {
-  width: 33.3%;
+  width: 25%;
   padding: 10px 0px;
   text-align: center;
   border-right: 1px solid #4f3426;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
 }
-#links div.right {
+#links div:last-child {
   border-right: none;
+}
+@media only screen and (max-width: 993px) {
+  #links div {
+    width: 50%;
+    height: 90px;
+  }
+  #links div:first-child {
+    border-bottom: 1px solid #4f3426;
+  }
+  #links div:nth-child(2) {
+    border-right: none;
+    border-bottom: 1px solid #4f3426;
+  }
 }
 
 #schedule .table-row-odd {
@@ -226,6 +251,19 @@ nav ul a {
 #schedule td,
 #schedule th {
   padding: 6px;
+}
+#schedule td div:not(.active),
+#schedule th div:not(.active) {
+  max-height: 0px;
+  transition: max-height 0.25s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+  opacity: 0;
+}
+#schedule td div,
+#schedule th div {
+  opacity: 1;
+  max-height: 350px;
+  transition: max-height 0.5s ease-in-out, opacity 0.2s cubic-bezier(1, 0, 1, 1);
 }
 @supports (-webkit-touch-callout: none) {
   #schedule td,

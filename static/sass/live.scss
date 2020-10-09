@@ -133,7 +133,6 @@ nav {
     left: 5vw;
 }
 
-
 @media only screen and (max-width: 993px) {
     .hide-on-med-and-down {
         display: none !important;
@@ -177,12 +176,12 @@ nav {
                 width: 40px;
                 font-size: 35px;
             }
-    
+
             &.label {
                 width: 40px;
                 font-size: 16px;
             }
-    
+
             &.divider {
                 font-size: 40px;
                 width: 15px;
@@ -193,12 +192,23 @@ nav {
 
 #links {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding: 0;
-    color: $b-brown;
     font-size: 20px;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p {
+        margin: 3px 0 0 0;
+        color: $b-brown;
+    }
 
     img {
         height: 2vw;
@@ -207,60 +217,87 @@ nav {
     }
 
     div {
-        width: 33.3%;
+        width: 25%;
         padding: 10px 0px;
         text-align: center;
         border-right: 1px solid $b-brown;
+        box-sizing: border-box;
+        justify-content: center;
+        display: flex;
 
-        &.right {
+        &:last-child {
             border-right: none;
+        }
+
+        @media only screen and (max-width: 993px) {
+            width: 50%;
+            height: 90px;
+
+            &:first-child {
+                border-bottom: 1px solid $b-brown;
+            }
+
+            &:nth-child(2) {
+                border-right: none;
+                border-bottom: 1px solid $b-brown;
+            }
         }
     }
 }
 
 #schedule {
-    
-.table-row-odd {
-    color: $schedule-dark-text;
-    background: $table-light;
-}
-
-.table-row-even {
-    color: $schedule-light-text;
-    background: $table-dark;
-}
-
-
-table {
-    font-size: 18px;
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 100%;
-    max-width: 100%;
-}
-
-tbody tr:first-child td:first-child {
-    border-top-left-radius: 5px;
-}
-
-tbody tr:first-child td:nth-child(3) {
-    border-top-right-radius: 5px;
-}
-
-tbody tr:last-child td:first-child {
-    border-bottom-left-radius: 5px;
-}
-
-tbody tr:last-child td:last-child {
-    border-bottom-right-radius: 5px;
-}
-
-td,
-th {
-    padding: 6px;
-
-    @supports (-webkit-touch-callout: none) {
-        padding: 3px;
+    .table-row-odd {
+        color: $schedule-dark-text;
+        background: $table-light;
     }
-}
+
+    .table-row-even {
+        color: $schedule-light-text;
+        background: $table-dark;
+    }
+
+    table {
+        font-size: 18px;
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    tbody tr:first-child td:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    tbody tr:first-child td:nth-child(3) {
+        border-top-right-radius: 5px;
+    }
+
+    tbody tr:last-child td:first-child {
+        border-bottom-left-radius: 5px;
+    }
+
+    tbody tr:last-child td:last-child {
+        border-bottom-right-radius: 5px;
+    }
+
+    td,
+    th {
+        padding: 6px;
+
+        div:not(.active) {
+            max-height: 0px;
+            transition: max-height 0.25s cubic-bezier(0, 1, 0, 1);
+            overflow: hidden;
+            opacity: 0;
+        }
+        div {
+            opacity: 1;
+            max-height: 350px;
+            transition: max-height 0.5s ease-in-out, opacity 0.2s cubic-bezier(1,0,1,1);
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding: 3px;
+        }
+    }
 }

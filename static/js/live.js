@@ -17,28 +17,31 @@ $(document).ready(function () {
                     .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
                     .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
             );
-            
 
-        var j = 0;
 
-        date['schedule'].forEach(function (element) {
-            $schBody.append(
-                $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
-                    .append($('<td>').html(element['time']))
-                    .append($('<td>').html(element['type']))
-                    .append($('<td>').html(element['event']))
-            )
+            var j = 0;
+
+            date['schedule'].forEach(function (element) {
+                $schBody.append(
+                    $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
+                        .append($('<td>').html(element['time']))
+                        .append($('<td>').html(element['type'] + " (click me!)").append($('<div>').html("This will be used to display info about workshops on the workshop specific schedule."))
+                        .click(function () {
+                            $(this).children().toggleClass('active')
+                        }))
+                        .append($('<td>').html(element['event']))
+                )
+            });
+
+            $table.append($schBody);
+            $tables.append($table);
         });
 
-        $table.append($schBody);
-        $tables.append($table);
+        $("#schedule-container").append($tables);
     });
-
-    $("#schedule-container").append($tables);
-});
 });
 
-var countDownDate = new Date("October 18 2020 09:00:00 EDT").getTime();
+var countDownDate = new Date("October 18 2020 13:00:00 EDT").getTime();
 var myfunc = setInterval(function () {
 
     var now = new Date().getTime();

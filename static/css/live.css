@@ -1,17 +1,237 @@
-/* Error: Undefined variable.
- *    ,
- * 30 |     background-color: $dark-bg;
- *    |                       ^^^^^^^^
- *    '
- *   static\sass\live.scss 30:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 30 \2502      background-color: $dark-bg;\d\a    \2502                        ^^^^^^^^\a    \2575 \a   static\\sass\\live.scss 30:23  root stylesheet";
+@font-face {
+  font-family: "creepster";
+  src: url("/static/assets/Creepster-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: DellmonteSans;
+  src: url("/static/assets/dellmonte-sans.otf") format("opentype");
+}
+.center {
+  text-align: center;
+}
+
+html,
+body {
+  background-color: #F7F2D8;
+  font-family: "Quicksand";
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 993px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+h1 {
+  letter-spacing: 0.075em;
+  font-family: "creepster";
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 4vw;
+}
+
+@media only screen and (max-width: 993px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+p {
+  font-size: 20px;
+}
+
+a {
+  color: red;
+}
+
+.section {
+  padding: 35px 0px 5px 0px;
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #477215;
+  font-family: "Quicksand";
+  box-shadow: 0px 0px 8px #000000;
+  text-align: center;
+}
+nav li {
+  margin: 0px 0px 0px 15px;
+  list-style-type: none;
+}
+nav ul {
+  display: inline-flex;
+  margin: auto;
+  padding: 0px;
+}
+nav ul a {
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  color: #F7F2D8;
+  padding: 0px 10px;
+  height: 64px;
+  font-size: 1.5rem;
+  line-height: 64px;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 47.5%;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 #e4e4e4;
+  padding: 15px;
+  margin: 3vh auto;
+}
+.card.full-width {
+  flex: 0 0 97.5%;
+}
+
+#yeti {
+  position: absolute;
+  width: 15vw;
+  right: 5vw;
+}
+
+#kraken {
+  position: absolute;
+  width: 15vw;
+  left: 5vw;
+}
+
+@media only screen and (max-width: 993px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+#clock {
+  text-align: center;
+  padding-top: 20px;
+}
+#clock div {
+  margin: 0;
+}
+#clock p {
+  line-height: 100%;
+  font-size: 2vw;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+#clock p.display {
+  width: 4.5vw;
+  font-weight: bold;
+  font-size: 4vw;
+}
+#clock p.label {
+  width: 4.5vw;
+  font-size: 1.3vw;
+}
+#clock p.divider {
+  font-size: 4.5vw;
+  width: 1vw;
+}
+@media only screen and (max-width: 993px) {
+  #clock p {
+    font-size: 20px;
+  }
+  #clock p.display {
+    width: 40px;
+    font-size: 35px;
+  }
+  #clock p.label {
+    width: 40px;
+    font-size: 16px;
+  }
+  #clock p.divider {
+    font-size: 40px;
+    width: 15px;
+  }
+}
+
+#links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: #4f3426;
+  font-size: 20px;
+}
+#links img {
+  height: 2vw;
+  min-height: 20px;
+  vertical-align: middle;
+}
+#links div {
+  width: 33.3%;
+  padding: 10px 0px;
+  text-align: center;
+  border-right: 1px solid #4f3426;
+}
+#links div.right {
+  border-right: none;
+}
+
+#schedule .table-row-odd {
+  color: #4f3426;
+  background: #F7F2D8;
+}
+#schedule .table-row-even {
+  color: #4f3426;
+  background: #E7D8BC;
+}
+#schedule table {
+  font-size: 18px;
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 100%;
+  max-width: 100%;
+}
+#schedule tbody tr:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+#schedule tbody tr:first-child td:nth-child(3) {
+  border-top-right-radius: 5px;
+}
+#schedule tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+#schedule tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+#schedule td,
+#schedule th {
+  padding: 6px;
+}
+@supports (-webkit-touch-callout: none) {
+  #schedule td,
+#schedule th {
+    padding: 3px;
+  }
+}
+
+/*# sourceMappingURL=live.css.map */

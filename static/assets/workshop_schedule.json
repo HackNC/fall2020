@@ -5,7 +5,7 @@
             {
                 "time": "4:00pm - 5:00pm",
                 "event": "Intro to Frontend: Building Your First React App",
-                "description": "",
+                "description": "Maybe you’ve heard of React! Maybe not! We’ll use it to make a dynamic todo list app in the web browser. Write down your groceries, amaze your friends.",
                 "host": "HackNC",
                 "difficulty": "1",
                 "location": "Twitch"

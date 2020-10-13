@@ -3,22 +3,32 @@
         "date": "Friday, 10/16",
         "schedule": [
             {
-                "time": "4:00 PM",
-                "end": "8:00 PM",
+                "time": "4:00pm",
+                "end": " - 8:00pm",
                 "type": "Workshop",
-                "event": "Workshops (led by HackNC/sponsors)"
+                "event": "Workshops (led by HackNC/sponsors)",
+                "location": "Twitch"
             },
             {
-                "time": "8:00 PM",
-                "end": "9:00 PM",
+                "time": "8:00pm",
+                "end": " - 9:00pm",
                 "type": "Social",
-                "event": "Team Formation: Session 1"
+                "event": "Team Formation: Session 1 (Glimpse)",
+                "location": "Discord: #searching-for-teammates"
             },
             {
-                "time": "9:00 PM",
-                "end": "11:00 PM",
+                "time": "9:00pm",
+                "end": " - 11:00pm",
                 "type": "Social",
-                "event": "Games and Socials"
+                "event": "Minecraft Challenge: Can you build the best Cryptid?",
+                "location": "TBD"
+            },
+            {
+                "time": "10:00pm",
+                "end": " - 11:00pm",
+                "type": "Social",
+                "event": "Skribbl.io",
+                "location": "TBD"
             }
         ]
     },
@@ -26,40 +36,95 @@
         "date": "Saturday, 10/17",
         "schedule": [
             {
-                "time": "11:00 AM",
-                "end": "12:00 PM",
+                "time": "9:00am",
+                "end": " - 11:00pm",
                 "type": "General",
-                "event": "Opening Ceremony"
+                "event": "Pre-Event Troubleshooting",
+                "location": "TBD"
             },
             {
-                "time": "12:00 PM",
-                "end": "12:00 PM",
+                "time": "11:00am",
+                "end": " - 12:00pm",
                 "type": "General",
-                "event": "Hacking Begins!"
+                "event": "<b>Opening Ceremony</b>",
+                "location": "Twitch"
             },
             {
-                "time": "12:00 PM",
-                "end": "1:00 PM",
+                "time": "12:00pm",
+                "end": " - 3:00pm",
+                "type": "Sponsors",
+                "event": "<b>Sponsor Fair!</b>",
+                "location": "<a target='_blank' href='https://app.brazenconnect.com/a/unc-computer-science-dept/e/A3BwQ'>Brazen</a>"
+            },
+            {
+                "time": "12:00pm",
+                "end": "",
+                "type": "General",
+                "event": "<b>Hacking Begins!</b>",
+                "location": "-"
+            },
+            {
+                "time": "12:00pm",
+                "end": " - 1:00pm",
                 "type": "Social",
-                "event": "Team Formation: Session 2"
+                "event": "Team Formation: Session 2 (Glimpse)",
+                "location": "Discord: #searching-for-teammates"
             },
             {
-                "time": "12:00 PM",
-                "end": "5:00 PM",
-                "type": "Sponsor",
-                "event": "Sponsor Fair"
-            },
-            {
-                "time": "1:00 PM",
-                "end": "9:00 PM",
+                "time": "1:00pm",
+                "end": " - 10:00pm",
                 "type": "Workshop",
-                "event": "Sponsor Workshops"
+                "event": "Sponsor Workshops",
+                "location": "TBD"
             },
             {
-                "time": "6:00 PM",
-                "end": "1:00 AM Sunday",
+                "time": "4:00pm",
+                "end": " - 5:00pm",
+                "type": "Panel",
+                "event": "Panel (HackNC): Women in Tech",
+                "location": "Twitch"
+            },
+            {
+                "time": "5:00pm",
+                "end": " - 6:00pm",
+                "type": "Panel",
+                "event": "Panel (HackNC): Diversity in Tech",
+                "location": "Twitch"
+            },
+            {
+                "time": "6:00pm",
+                "end": " - 7:00pm",
                 "type": "Social",
-                "event": "Games and Socials"
+                "event": "Hacker Social (Glimpse)",
+                "location": "TBD"
+            },
+            {
+                "time": "7:00pm",
+                "end": " - 7:30pm",
+                "type": "General",
+                "event": "MLH: US Air Force CTF Challenge",
+                "location": "TBD"
+            },
+            {
+                "time": "7:30pm",
+                "end": " - 8:00pm",
+                "type": "General",
+                "event": "MLH: Werewolf",
+                "location": "TBD"
+            },
+            {
+                "time": "10:00pm",
+                "end": " - 11:00pm",
+                "type": "Social",
+                "event": "Wikirace",
+                "location": "TBD"
+            },
+            {
+                "time": "11:00pm",
+                "end": " - 12:00am",
+                "type": "Social",
+                "event": "Jackbox",
+                "location": "TBD"
             }
         ]
     },
@@ -67,22 +132,60 @@
         "date": "Sunday, 10/18",
         "schedule": [
             {
-                "time": "1:00 PM",
-                "end": "1:00 PM",
+                "time": "1:00am",
+                "end": "",
                 "type": "General",
-                "event": "Hacking Ends"
+                "event": "Late Night Check-In",
+                "location": "Twitch"
             },
             {
-                "time": "1:00 PM",
-                "end": "4:30 PM",
-                "type": "General",
-                "event": "Judging"
+                "time": "1:00am",
+                "end": "",
+                "type": "Social",
+                "event": "Spicy Ramen Challenge",
+                "location": "Twitch"
             },
             {
-                "time": "5:00 PM",
-                "end": "6:00 PM",
+                "time": "1:00am",
+                "end": " - 2:00am",
+                "type": "Workshop",
+                "event": "Sponsor Workshop",
+                "location": "Twitch"
+            },
+            {
+                "time": "12:00pm",
+                "end": " - 1:00pm",
                 "type": "General",
-                "event": "Closing Ceremony"
+                "event": "Devpost Submission Window",
+                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+            },
+            {
+                "time": "1:00pm",
+                "end": "",
+                "type": "General",
+                "event": "<b>Hacking Ends!</b> Final submissions DUE (2 min. video + code on Devpost)",
+                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+            },
+            {
+                "time": "1:00pm",
+                "end": " - 4:30pm",
+                "type": "General",
+                "event": "Judging",
+                "location": "Discord"
+            },
+            {
+                "time": "1:30pm",
+                "end": " - 2:30pm",
+                "type": "Panel",
+                "event": "Panel (HackNC): UNC Alum(na)",
+                "location": "Twitch"
+            },
+            {
+                "time": "5:00pm",
+                "end": " - 6:00pm",
+                "type": "General",
+                "event": "Closing Ceremony",
+                "location": "Twitch"
             }
         ]
     }

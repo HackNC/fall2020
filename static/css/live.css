@@ -95,6 +95,9 @@ nav ul a {
   line-height: 64px;
   position: relative;
 }
+nav ul a.selected {
+  color: #adbf88;
+}
 
 .card {
   background-color: #f7fbed;
@@ -196,7 +199,7 @@ nav ul a {
   vertical-align: middle;
 }
 #links div {
-  width: 25%;
+  width: 20%;
   padding: 10px 0px;
   text-align: center;
   border-right: 1px solid #4f3426;
@@ -219,27 +222,46 @@ nav ul a {
     border-right: none;
     border-bottom: 1px solid #4f3426;
   }
+  #links div:nth-child(3) {
+    border-bottom: 1px solid #4f3426;
+  }
+  #links div:nth-child(4) {
+    border-right: none;
+    border-bottom: 1px solid #4f3426;
+  }
+  #links div:nth-child(5) {
+    border-right: none;
+  }
 }
 
+#schedule h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
 #schedule .table-row-odd {
   color: #4f3426;
-  background: #F7F2D8;
+  background: #f7fbed;
 }
 #schedule .table-row-even {
   color: #4f3426;
-  background: #E7D8BC;
+  background: #f7f0d8;
 }
 #schedule table {
+  text-align: left;
   font-size: 18px;
   width: 100%;
   border-collapse: collapse;
   min-width: 100%;
   max-width: 100%;
+  margin-bottom: 50px;
+}
+#schedule table:last-child {
+  margin-bottom: 0;
 }
 #schedule tbody tr:first-child td:first-child {
   border-top-left-radius: 5px;
 }
-#schedule tbody tr:first-child td:nth-child(3) {
+#schedule tbody tr:first-child td:nth-child(4) {
   border-top-right-radius: 5px;
 }
 #schedule tbody tr:last-child td:first-child {
@@ -248,8 +270,31 @@ nav ul a {
 #schedule tbody tr:last-child td:last-child {
   border-bottom-right-radius: 5px;
 }
+#schedule .title {
+  width: 100%;
+  text-align: center;
+}
+#schedule .expandable {
+  font-weight: bold;
+  color: #6fb321;
+}
+#schedule .expandable::before {
+  content: "+";
+  text-align: center;
+  display: inline-block;
+  width: 15px;
+  vertical-align: 10%;
+}
+#schedule .expandable:hover {
+  cursor: pointer;
+  color: #477215;
+}
+#schedule .expandable.active::before {
+  content: "-";
+}
 #schedule td,
 #schedule th {
+  vertical-align: top;
   padding: 6px;
 }
 #schedule td div:not(.active),
@@ -258,12 +303,15 @@ nav ul a {
   transition: max-height 0.25s cubic-bezier(0, 1, 0, 1);
   overflow: hidden;
   opacity: 0;
+  margin-top: 0px;
 }
 #schedule td div,
 #schedule th div {
+  margin-top: 5px;
+  color: #4f3426 !important;
   opacity: 1;
-  max-height: 350px;
-  transition: max-height 0.5s ease-in-out, opacity 0.2s cubic-bezier(1, 0, 1, 1);
+  max-height: 1000px;
+  transition: margin-top 0.15s ease-in-out, max-height 0.5s ease-in-out, opacity 0.2s cubic-bezier(1, 0, 1, 1);
 }
 @supports (-webkit-touch-callout: none) {
   #schedule td,

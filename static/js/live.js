@@ -7,33 +7,30 @@ $(document).ready(function () {
             var $table = $('<table>');
             var $schBody = $('<tbody>');
 
-            $table.append(
-                $('<h3>').text(date['date'])
-            );
+            var $header = $('<h2>').text(date['date']);
 
             $table.append(
                 $('<tr>')
-                    .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time (EST)'))
-                    .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
-                    .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
+                    .append($('<th>').text('Time (EST)'))
+                    .append($('<th>').text('Type'))
+                    .append($('<th>').text('Event'))
+                    .append($('<th>').text('Location'))
             );
-
 
             var j = 0;
 
             date['schedule'].forEach(function (element) {
                 $schBody.append(
                     $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
-                        .append($('<td>').html(element['time']))
-                        .append($('<td>').html(element['type'] + " (click me!)").append($('<div>').html("This will be used to display info about workshops on the workshop specific schedule."))
-                        .click(function () {
-                            $(this).children().toggleClass('active')
-                        }))
-                        .append($('<td>').html(element['event']))
+                        .append($('<td>', { "style": "font-weight: bold; width: 15%;" }).html(element['time'] + element['end']))
+                        .append($('<td>', { "style": "width: 12.5%;" }).html(element['type']))
+                        .append($('<td>', { "style": "width: 50%;" }).html(element['event']))
+                        .append($('<td>', { "style": "width: 22.5%;" }).html(element['location']))
                 )
             });
 
             $table.append($schBody);
+            $tables.append($header);
             $tables.append($table);
         });
 

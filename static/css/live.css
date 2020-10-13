@@ -307,6 +307,7 @@ nav ul a.selected {
 }
 #schedule td div,
 #schedule th div {
+  font-weight: normal !important;
   margin-top: 5px;
   color: #4f3426 !important;
   opacity: 1;

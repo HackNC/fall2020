@@ -181,6 +181,13 @@
                 "location": "Twitch"
             },
             {
+                "time": "3:00pm",
+                "end": " - 4:00pm",
+                "type": "Workshop",
+                "event": "Sponsor Workshop",
+                "location": "Twitch"
+            },
+            {
                 "time": "5:00pm",
                 "end": " - 6:00pm",
                 "type": "General",

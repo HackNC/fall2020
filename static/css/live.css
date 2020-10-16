@@ -351,4 +351,10 @@ a {
   }
 }
 
+#tracks img {
+  padding-top: 15px;
+  height: 7vw;
+  min-height: 70px;
+}
+
 /*# sourceMappingURL=live.css.map */

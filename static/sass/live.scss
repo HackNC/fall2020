@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -59,7 +63,7 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 a {
@@ -211,6 +215,7 @@ nav {
     }
 
     p {
+        font-size: 20px;
         margin: 3px 0 0 0;
         color: $b-brown;
     }
@@ -263,11 +268,12 @@ nav {
         }
     }
 }
+a {
+    color: #0000EE;
+}
 
 #schedule {
-    a {
-        color: #0000EE;
-    }
+    
     
     h2 {
         text-align: center;

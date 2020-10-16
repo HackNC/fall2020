@@ -14,7 +14,7 @@ $(document).ready(function () {
                     .append($('<th>').text('Time (EST)'))
                     .append($('<th>').text('Workshop'))
                     .append($('<th>').text('Host'))
-                    .append($('<th>').text('Difficulty / 3'))
+                    .append($('<th>').text('Difficulty'))
                     .append($('<th>').text('Location'))
             );
 
@@ -44,9 +44,9 @@ $(document).ready(function () {
                             $(this).toggleClass('active')
                             $(this).next().toggleClass('active')
                         })).append($expandable))
-                        .append($('<td>', { "style": "width: 10%;" }).html(element['host']))
-                        .append($('<td>', { "style": "width: 10%;" }).html(element['difficulty']))
-                        .append($('<td>', { "style": "width: 12.5%;" }).html(element['location']))
+                        .append($('<td>', { "style": "width: 11.25%;" }).html(element['host']))
+                        .append($('<td>', { "style": "width: 11.25%;" }).html(element['difficulty']))
+                        .append($('<td>', { "style": "width: 10%;" }).html(element['location']))
                 )
             });
 

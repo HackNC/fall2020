@@ -7,7 +7,7 @@
                 "event": "Intro to Frontend: Building Your First React App",
                 "description": "Maybe you’ve heard of React! Maybe not! We’ll use it to make a dynamic todo list app in the web browser. Write down your groceries, amaze your friends.",
                 "host": "HackNC",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             },
             {
@@ -26,7 +26,7 @@
                     ],
                     "resources": [
                         {
-                            "text": "Slideshow",
+                            "text": "Slide Deck",
                             "link": "https://drive.google.com/file/d/1bx9vjoma6bwzgWWmO9I254-DmsITd8ak/view?usp=sharing"
                         },
                         {
@@ -41,7 +41,7 @@
                 },
                 "description": "This workshop will use a combination of Square APIs to create an \"Order Ahead\" experience. We'll look at how to combine APIs for Locations, Customers, Catalog, Orders, and Payments to build a contactless customer- and business-facing solution for pickups or delivery. We'll show you how you can apply this to any payments project that is related to a small eCommerce or food business app.",
                 "host": "Square",
-                "difficulty": "2",
+                "difficulty": "Intermediate",
                 "location": "Twitch"
             },
             {
@@ -49,7 +49,7 @@
                 "event": "Getting Started with MongoDB and Node.js for Application Development",
                 "description": "In this workshop attendees will learn how to model their data and interact with it in a MongoDB NoSQL database using Node.js and JavaScript.",
                 "host": "MongoDB",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             }
         ]
@@ -62,7 +62,7 @@
                 "event": "Using Machine Learning to Correlate the Effects of Regional Temperatures on the Number of Cases of COVID-19",
                 "description": "In this workshop we will cover collecting data, preprocessing it for use with machine learning, some different types of machine learning models, and the basics of hyper-parameter optimization and AutoML. Participants should have a basic understanding of Machine learning concepts and some familiarity with the Python programming language. The goal is to build an end-to-end working model so that attendees have a good understanding of the model lifecycle and the importance of hyper-parameter tuning.",
                 "host": "IQVIA",
-                "difficulty": "1",
+                "difficulty": "",
                 "location": "Twitch"
             },
             {
@@ -70,7 +70,7 @@
                 "event": "Intro to Docker",
                 "description": "Containerization - an introduction to Docker, and how it is used in projects of all scales. We will explore using Docker to build microservices in an interactive workshop.",
                 "host": "CapTech",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             },
             {
@@ -89,7 +89,7 @@
                     ],
                     "resources": [
                         {
-                            "text": "Slideshow",
+                            "text": "Slide Deck",
                             "link": "https://docs.google.com/presentation/d/1fXXuBtyBdf0wfWxzKBul0sc_no805JpiYW8UywZUNz0/edit?usp=sharing"
                         },
                         {
@@ -98,9 +98,9 @@
                         }
                     ]
                 },
-                "description": "Serverless is changing the way developers build apps. By only having to focus on code logic, you speed up the process of getting your app released. In this workshop, you'll use Nimbella's serverless cloud platform to build a stateful serverless app with nothing but code logic. You won't have to set up any services. In just 1 hour, you'll have the fundamental skills needed to start deploying to the cloud.",
+                "description": "Serverless is changing the way developers build apps. By only having to focus on code logic, you speed up the process of getting your app released. In this workshop, you'll use Nimbella's serverless cloud platform to build a stateful serverless app with nothing but code logic. You won't have to set up any services. In just Beginner hour, you'll have the fundamental skills needed to start deploying to the cloud.",
                 "host": "Nimbella",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             },
             {
@@ -108,7 +108,7 @@
                 "event": "Tech Talk: The Past 30ish Years of Software Engineering",
                 "description": "The past 30 years have seen a lot of change in software engineering, and we’ll explore various themes and trends through the lens of 3 of its visionaries. You’ll see that certain things we view as novel today are actually pretty old, and we will discuss how software engineering has evolved over 3 decades.",
                 "host": "CoStar",
-                "difficulty": "1",
+                "difficulty": "-",
                 "location": "Twitch"
             },
             {
@@ -116,7 +116,7 @@
                 "event": "Learning Web Development Through Arts: An Exploration of p5.js",
                 "description": "You know if this workshop is for you if: You want to create art but you can’t draw a straight line. You want to code and you are a visual learner. You like to make pretty things! Join me to learn how to code using p5.js, a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!",
                 "host": "HERE Technologies",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             },
             {
@@ -124,7 +124,7 @@
                 "event": "Make Your First Chrome Extension in 10 Minutes",
                 "description": "",
                 "host": "HERE Technologies",
-                "difficulty": "1",
+                "difficulty": "Beginner",
                 "location": "Twitch"
             },
             {
@@ -132,7 +132,7 @@
                 "event": "The World of APIs Behind Everything You Do Online",
                 "description": "APIs are everywhere in 2020, powering all the web, mobile, and device applications we depend on each day. Let's spend some time looking at this API landscape, using Postman as our browser for the rapidly growing API universe.",
                 "host": "Postman",
-                "difficulty": "1",
+                "difficulty": "-",
                 "location": "Twitch"
             }
         ]
@@ -163,7 +163,7 @@
                     ],
                     "resources": [
                         {
-                            "text": "Slideshow",
+                            "text": "Slide Deck",
                             "link": "https://ad-tech-with-here.netlify.app/#/"
                         },
                         {
@@ -174,7 +174,7 @@
                 },
                 "description": "Driving targeted sales to brick and mortar stores using classic Digital Marketing strategies is a complex task. Hyper-local marketing lets you target prospective customers to very specific locations and in real time. This can be achieved by leveraging Location technology. This workshop explores the creation of geofences using the HERE Location Services and using them to send real-time offers to customers based on their location. We will use AWS Lambda for HERE Location Services to find out if the customer is within the boundaries of the store.",
                 "host": "HERE Technologies",
-                "difficulty": "2",
+                "difficulty": "Intermediate",
                 "location": "Twitch"
             },
             {
@@ -182,7 +182,7 @@
                 "event": "Tech Talk: Farm to Tablet: Agronomic Data Processing at John Deere",
                 "description": "John Deere’s Intelligent Solutions Group (ISG) creates the advanced technology products revolutionizing agriculture. Autonomous robotic vehicles, artificial intelligence and machine learning all contribute to the tools modern farming leverages. This talk takes a technical deep dive into how John Deere gets live data from planting and harvest into the digital tools farmers use to make critical decisions for their business.",
                 "host": "John Deere",
-                "difficulty": "1",
+                "difficulty": "-",
                 "location": "Twitch"
             }
         ]

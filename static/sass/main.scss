@@ -343,6 +343,26 @@ a {
     }
 }
 
+.live-button {
+    border-radius: 10px;
+    transition: transform 0.15s;
+    background-color: $med-blue;
+    padding: 0.7vw;
+
+    a {
+        color: $nav-text;
+        font-family: "Quicksand";
+        font-size: 4.5vw;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transition: transform 0.3s;
+    }
+}
+
 nav {
     width: 100%;
     height: 64px;

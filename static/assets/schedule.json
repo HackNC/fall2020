@@ -7,13 +7,13 @@
                 "end": " - 8:00pm",
                 "type": "Workshop",
                 "event": "Workshops (led by HackNC/sponsors)",
-                "location": "Twitch"
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
             },
             {
                 "time": "8:00pm",
                 "end": " - 9:00pm",
                 "type": "Social",
-                "event": "Team Formation: Session 1 (Glimpse)",
+                "event": "Team Matching #1 (Glimpse)",
                 "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
             },
             {
@@ -67,7 +67,7 @@
                 "time": "12:00pm",
                 "end": " - 1:00pm",
                 "type": "Social",
-                "event": "Team Formation: Session 2 (Glimpse)",
+                "event": "Team Matching #2 (Glimpse)",
                 "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
             },
             {
@@ -95,7 +95,7 @@
                 "time": "6:00pm",
                 "end": " - 7:00pm",
                 "type": "Social",
-                "event": "Hacker Social (Glimpse)",
+                "event": "HackNC Social Hour (Glimpse)",
                 "location": "<a href='https://app.joinglimpse.com/room?key=580A4B' target='_blank'>Glimpse</a>"
             },
             {
@@ -150,7 +150,7 @@
                 "end": " - 2:00am",
                 "type": "Workshop",
                 "event": "Sponsor Workshop",
-                "location": "Twitch"
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
             },
             {
                 "time": "12:00pm",
@@ -185,7 +185,7 @@
                 "end": " - 4:00pm",
                 "type": "Workshop",
                 "event": "Sponsor Workshop",
-                "location": "Twitch"
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
             },
             {
                 "time": "5:00pm",

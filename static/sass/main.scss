@@ -344,16 +344,18 @@ a {
 }
 
 .live-button {
+    margin-top: 5px;
     border-radius: 10px;
     transition: transform 0.15s;
     background-color: $med-blue;
-    padding: 0.7vw;
+    padding: 1vw;
+    font-family: "Quicksand";
+    font-size: 4.5vw;
 
     a {
-        color: $nav-text;
-        font-family: "Quicksand";
-        font-size: 4.5vw;
+        color: $b-cream;
         text-decoration: none;
+        font-weight: bold;
     }
 
     &:hover {

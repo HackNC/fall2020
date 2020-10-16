@@ -41,7 +41,21 @@
                 <li><a href="/live/prizes">Prizes</a></li>
             </ul>
         </nav>
-
+        <nav class="mobile-nav">
+            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
+                src="../static/assets/images/hamburger.png">
+        </nav>
+        <div id="mobile-nav-div">
+            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
+                src="../static/assets/images/x.png">
+            <ul>
+                <li><a href="/">HackNC</a></li>
+                <li><a class="selected" href="/live">Live</a></li>
+                <li><a href="/live/workshop-schedule">Workshop Schedule</a></li>
+                <li><a href="/live/tracks">Tracks</a></li>
+                <li><a href="/live/prizes">Prizes</a></li>
+            </ul>
+        </div>
         <div class="container">
 
             <div class="card full-width">
@@ -95,7 +109,8 @@
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://docs.google.com/document/d/1huItcFzhuePiP-JehxvYfp1zIdXUrKLES-BUrk8LgW4/edit#">
+                    <a target="_blank"
+                        href="https://docs.google.com/document/d/1huItcFzhuePiP-JehxvYfp1zIdXUrKLES-BUrk8LgW4/edit#">
                         <img class="hide-on-med-and-down" src="../static/assets/images/hacknc2020logo.png">
                         <p>Hacker Guide</p>
                     </a>

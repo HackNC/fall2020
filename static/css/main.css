@@ -313,16 +313,18 @@ a {
   }
 }
 .live-button {
+  margin-top: 5px;
   border-radius: 10px;
   transition: transform 0.15s;
   background-color: #116f9e;
-  padding: 0.7vw;
+  padding: 1vw;
+  font-family: "Quicksand";
+  font-size: 4.5vw;
 }
 .live-button a {
   color: #F7F2D8;
-  font-family: "Quicksand";
-  font-size: 4.5vw;
   text-decoration: none;
+  font-weight: bold;
 }
 .live-button:hover {
   transform: scale(1.05);

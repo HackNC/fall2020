@@ -75,7 +75,7 @@
                 "end": " - 10:00pm",
                 "type": "Workshop",
                 "event": "Sponsor Workshops",
-                "location": "TBD"
+                "location": "<a href='workshop-schedule'>Schedule</a>"
             },
             {
                 "time": "4:00pm",

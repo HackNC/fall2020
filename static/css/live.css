@@ -188,6 +188,7 @@ nav ul a.selected {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 #links p {
   margin: 3px 0 0 0;
@@ -197,6 +198,11 @@ nav ul a.selected {
   height: 2vw;
   min-height: 20px;
   vertical-align: middle;
+}
+@media only screen and (max-width: 600px) {
+  #links img {
+    width: 60%;
+  }
 }
 #links div {
   width: 20%;
@@ -234,6 +240,9 @@ nav ul a.selected {
   }
 }
 
+#schedule a {
+  color: #0000EE;
+}
 #schedule h2 {
   text-align: center;
   margin-bottom: 0;
@@ -275,6 +284,7 @@ nav ul a.selected {
   text-align: center;
 }
 #schedule .expandable {
+  margin: 0;
   font-weight: bold;
   color: #6fb321;
 }
@@ -291,6 +301,20 @@ nav ul a.selected {
 }
 #schedule .expandable.active::before {
   content: "-";
+}
+#schedule .to_expand h4 {
+  margin-bottom: 3px;
+}
+#schedule .to_expand p {
+  margin: 0;
+}
+#schedule .to_expand ul {
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+#schedule .to_expand a {
+  color: #4f3426;
 }
 #schedule td,
 #schedule th {

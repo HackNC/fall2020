@@ -13,9 +13,35 @@
             {
                 "time": "5:15pm - 6:15pm",
                 "event": "Learn How to Make An Order Ahead App Using Square",
+                "resources": {
+                    "prereqs": [
+                        {
+                            "text": "Create a Square Dev Account",
+                            "link": "https://squareup.com/signup"
+                        },
+                        {
+                            "text": "Open Glitch",
+                            "link": "https://glitch.com/~square-order-ahead"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "text": "Slideshow",
+                            "link": "https://drive.google.com/file/d/1bx9vjoma6bwzgWWmO9I254-DmsITd8ak/view?usp=sharing"
+                        },
+                        {
+                            "text": "Orders API Quick Start",
+                            "link": "https://developer.squareup.com/docs/orders-api/quick-start/start"
+                        },
+                        {
+                            "text": "Order-Ahead Sample App GitHub Repo",
+                            "link": "https://github.com/square/connect-api-examples/tree/master/connect-examples/v2/node_orders-payments"
+                        }
+                    ]
+                },
                 "description": "This workshop will use a combination of Square APIs to create an \"Order Ahead\" experience. We'll look at how to combine APIs for Locations, Customers, Catalog, Orders, and Payments to build a contactless customer- and business-facing solution for pickups or delivery. We'll show you how you can apply this to any payments project that is related to a small eCommerce or food business app.",
                 "host": "Square",
-                "difficulty": "1",
+                "difficulty": "2",
                 "location": "Twitch"
             },
             {
@@ -49,8 +75,30 @@
             },
             {
                 "time": "3:00pm - 4:00pm",
-                "event": "Intro to Serverless",
-                "description": "Deploying your code to the cloud is easy! Let me show you how with Nimbella’s Serverless platform. All you’ll have to focus on is your code logic and the platform will handle the rest. As a developer, you don’t deal with cloud architecture. By the end of this workshop, you’ll have a secure domain to your app that can be shared with anyone online + all the fundamental skills you’ll need to start deploying apps the cloud!",
+                "event": "Intro to Serverless: Demistify the Cloud",
+                "resources": {
+                    "prereqs": [
+                        {
+                            "text": "Create a Nimbella account",
+                            "link": "https://nimbella.com/signup"
+                        },
+                        {
+                            "text": "Download the CLI to follow along",
+                            "link": "https://nimbella.com/integrations/commander/CLI"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "text": "Slideshow",
+                            "link": "https://docs.google.com/presentation/d/1fXXuBtyBdf0wfWxzKBul0sc_no805JpiYW8UywZUNz0/edit?usp=sharing"
+                        },
+                        {
+                            "text": "Template GitHub Repo",
+                            "link": "https://github.com/JamieDawson/hacknc_nimbella"
+                        }
+                    ]
+                },
+                "description": "Serverless is changing the way developers build apps. By only having to focus on code logic, you speed up the process of getting your app released. In this workshop, you'll use Nimbella's serverless cloud platform to build a stateful serverless app with nothing but code logic. You won't have to set up any services. In just 1 hour, you'll have the fundamental skills needed to start deploying to the cloud.",
                 "host": "Nimbella",
                 "difficulty": "1",
                 "location": "Twitch"
@@ -95,9 +143,38 @@
             {
                 "time": "1:00am - 2:00am",
                 "event": "Ad-Tech with HERE Technologies, AWS Lambda, and AWS IoT",
+                "resources": {
+                    "prereqs": [
+                        {
+                            "text": "Code IDE"
+                        },
+                        {
+                            "text": "Python 3.X",
+                            "link": "https://www.python.org/downloads/"
+                        },
+                        {
+                            "text": "Freemium HERE Developer Account",
+                            "link": "https://developer.here.com/freemium"
+                        },
+                        {
+                            "text": "AWS Account",
+                            "link": "https://aws.amazon.com/"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "text": "Slideshow",
+                            "link": "https://ad-tech-with-here.netlify.app/#/"
+                        },
+                        {
+                            "text": "Template GitHub Repo",
+                            "link": "https://github.com/JamieDawson/hacknc_nimbella"
+                        }
+                    ]
+                },
                 "description": "Driving targeted sales to brick and mortar stores using classic Digital Marketing strategies is a complex task. Hyper-local marketing lets you target prospective customers to very specific locations and in real time. This can be achieved by leveraging Location technology. This workshop explores the creation of geofences using the HERE Location Services and using them to send real-time offers to customers based on their location. We will use AWS Lambda for HERE Location Services to find out if the customer is within the boundaries of the store.",
                 "host": "HERE Technologies",
-                "difficulty": "1",
+                "difficulty": "2",
                 "location": "Twitch"
             },
             {

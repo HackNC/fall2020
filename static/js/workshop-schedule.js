@@ -14,23 +14,38 @@ $(document).ready(function () {
                     .append($('<th>').text('Time (EST)'))
                     .append($('<th>').text('Workshop'))
                     .append($('<th>').text('Host'))
-                    .append($('<th>').text('Difficulty'))
+                    .append($('<th>').text('Difficulty / 3'))
                     .append($('<th>').text('Location'))
             );
 
             var j = 0;
 
             date['schedule'].forEach(function (element) {
+                $expandable = $('<div>', {"class": "to_expand"}).append($('<p>').text(element['description']));
+                if (element['resources'] != null) {
+                    $ul = $('<ul>');
+                    element['resources'].prereqs.forEach(function (prereq) {
+                        $ul.append($('<li>').append($('<a>', { "target": "_blank", "href": prereq['link']}).text(prereq['text'])));
+                    })
+                    $expandable.append($('<h4>').text('Prerequisites:'));
+                    $expandable.append($ul);
+                    $ul = $('<ul>');
+                    element['resources'].resources.forEach(function (prereq) {
+                        $ul.append($('<li>').append($('<a>', { "target": "_blank", "href": prereq['link']}).text(prereq['text'])));
+                    })
+                    $expandable.append($('<h4>').text('Resources:'));
+                    $expandable.append($ul);
+                }
+                
                 $schBody.append(
                     $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
                         .append($('<td>', { "style": "font-weight: bold; width: 15%;" }).html(element['time']))
-                        .append($('<td>', { "style": "width: 52.5%;", "class": "expandable" }).html(element['event']).append($('<div>').html(element['description']))
-                        .click(function () {
+                        .append($('<td>', { "style": "width: 52.5%;"}).append($('<p>', {"class": "expandable" }).text(element['event']).click(function () {
                             $(this).toggleClass('active')
-                            $(this).children().toggleClass('active')
-                        }))
-                        .append($('<td>', { "style": "width: 12.5%;" }).html(element['host']))
-                        .append($('<td>', { "style": "width: 7.5%;" }).html(element['difficulty']))
+                            $(this).next().toggleClass('active')
+                        })).append($expandable))
+                        .append($('<td>', { "style": "width: 10%;" }).html(element['host']))
+                        .append($('<td>', { "style": "width: 10%;" }).html(element['difficulty']))
                         .append($('<td>', { "style": "width: 12.5%;" }).html(element['location']))
                 )
             });

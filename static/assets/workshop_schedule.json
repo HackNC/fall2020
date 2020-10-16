@@ -46,7 +46,7 @@
             },
             {
                 "time": "6:30pm - 7:30pm",
-                "event": "Getting Started with MongoDB and Node.js for Application Development",
+                "event": "Getting Started with MongoDB using Node.js",
                 "description": "In this workshop attendees will learn how to model their data and interact with it in a MongoDB NoSQL database using Node.js and JavaScript.",
                 "host": "MongoDB",
                 "difficulty": "Beginner",

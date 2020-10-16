@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en-us">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#3A3352">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta property="og:url" content="https://hacknc.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HackNC 2020">
+    <meta property="og:description" content="UNC-Chapel Hill's annual fall hackathon" />
+    <meta property="og:image" content="https://hacknc.com/static/assets/images/newbanner.png" />
+
+    <title>HackNC 2020</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/live.css">
+</head>
+
+<body>
+    <a id="mlh-trust-badge"
+        style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:1000"
+        href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+        target="_blank"><img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+            alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+    <main id="content container">
+
+        <nav class="hide-on-med-and-down">
+            <ul>
+                <li><a href="/">HackNC</a></li>
+                <li><a href="/live">Live</a></li>
+                <li><a href="/live/workshop-schedule/">Workshop Schedule</a></li>
+                <li><a href="/live/tracks">Tracks</a></li>
+                <li><a href="/live/prizes">Prizes</a></li>
+                <li><a class="selected" href="/live/resources">Resources</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <img onclick="getElementById('mobile-nav-div').classList.add('active')"
+                src="../../static/assets/images/hamburger.png">
+        </nav>
+        <div id="mobile-nav-div">
+            <img onclick="getElementById('mobile-nav-div').classList.remove('active')"
+                src="../../static/assets/images/x.png">
+            <ul>
+                <li><a href="/">HackNC</a></li>
+                <li><a class="selected" href="/live">Live</a></li>
+                <li><a href="/live/workshop-schedule">Workshop Schedule</a></li>
+                <li><a href="/live/tracks">Tracks</a></li>
+                <li><a href="/live/prizes">Prizes</a></li>
+                <li><a href="/live/resources">Resources</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="resources" class="card full-width">
+                <h1>Non-Profit Challenge Partners</h1>
+                <div class="container">
+                    <div class="item quarter-width">
+                        <a href="https://www.girlsontherun.org/"><img src="/static/assets/images/nonprofits/girlsontherun.png" alt="Girls on The Run"/></a>
+                    </div>
+                    <div class="item quarter-width">
+                        <a href="https://www.villageofwisdom.org/"><img src="/static/assets/images/nonprofits/villageofwisdom.webp" /></a>
+                    </div>
+                    <div class="item quarter-width">
+                        <a href="https://stonecenter.unc.edu/category/communiversity-youth-program/"><img src="/static/assets/images/nonprofits/stonecenter.png"/></a>
+                        <h2>Communiversity Youth Program</h2>
+                    </div>
+                    <div class="item quarter-width">
+                        <a href=""><img src="/static/assets/images/nonprofits/standupspeakout.png"/></a>
+                    </div>
+                    <div class="item quarter-width">
+                        <a href="https://www.riseagainsthunger.org/"><img src="/static/assets/images/nonprofits/riseagainsthunger.png"/></a>
+                    </div>
+                </div>
+                <h1>Technical Resources</h1>
+                <div class="tech-container">
+                    <div class="tech">
+                        <h2>Sponsors</h2>
+                        <h3>Square</h3>
+                        <ul>
+                            <li><a href="https://developer.squareup.com/docs">Square Developer Docs</a></li>
+                            <li><a href="https://developer.squareup.com/docs/orders-api/quick-start/start">Orders API Quick Start</a></li>
+                            <li><a href="https://github.com/square/connect-api-examples/tree/master/connect-examples/v2/node_orders-payments">Order-Ahead Sample App GitHub Repo</a></li>
+                        </ul>
+                        <h3>Capital One</h3>
+                        <ul>
+                            <li>
+                                <a href="http://api.reimaginebanking.com">Nessie API</a> - Capital One’s Hackathon API that gives you access to a multitude of real public-facing data - such as ATM and bank branch locations - along with mock customer account data.
+                            </li>
+                        </ul>
+                        <h3>Google Cloud</h3>
+                        <ul>
+                            <li><a href="http://goo.gle/hackathon-toolkit">Google Cloud Hackathon Toolkit</a></li>
+                        </ul>
+                        <h3>Digital Ocean</h3>
+                        <ul>
+                            <li><a href="https://docs.google.com/presentation/d/1myl1RvtTq3GBzII4VBeQvDzjl7PoYR3kazPPRlvnHMA/edit#slide=id.g888624581b_0_615">What is DigitalOcean?</a></li>
+                            <li>
+                                30-day free trial, $50 worth of credits for all attendees. Redeem your credits at <a href="https://do.co/studenthackathon">do.co/studenthackathon.</a> 
+                                <ul>
+                                    <li>
+                                        Note: This code and promo are only accessible to new customers in DigitalOcean.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Smart hack = if the winning teams sign up using this link that would mean $50 additional to the winning credits.</li>
+                        </ul>
+                        <h3>Balsamiq</h3>
+                        <ul>
+                            <li>90-day extended trial for Balsamiq Cloud.
+                                <ul>
+                                    <li><b>Promo Code:</b> BQUNYNWME100221</li>
+                                    <li>Code Expiration: February 01, 2021</li>
+                                    <li><a href="https://balsamiq.com/wireframes/cloud/sales/promo/">Instructions for promo code redemption</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h3>Wolfram|One</h3>
+                        <ul>
+                            <li>30-day full access to Wolfram|One. Redeem your access at <a href="https://account.wolfram.com/redeem/HackNC1020">account.wolfram.com/redeem/HackNC1020.</a></li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h2>APIs/Tools</h2>
+                        <h3>Communication</h3>
+                        <ul>
+                            <li><a href="https://www.twilio.com/docs">Twilio’s Communication APIs</a></li>
+                            <li><a href="https://newsapi.org/docs/get-started">NewsAPI</a></li>
+                            <li><a href="https://www.yelp.com/developers">Yelp</a></li>
+                        </ul>
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="https://developer.twitter.com/en">Twitter’s APIs</a></li>
+                            <li><a href="https://developers.facebook.com/">Facebook For Developers</a></li>
+                        </ul>
+                        <h3>Geolocation</h3>
+                        <ul>
+                            <li><a href="https://developers.google.com/maps/documentation">Google Maps</a></li>
+                            <li><a href="https://developer.here.com/">HERE Technologies Developer</a></li>
+                            <li><a href="https://developers.arcgis.com/documentation/">ArcGIS</a></li>
+                        </ul>
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li><a href="https://www.ibm.com/watson/developer-resources/">IBM Watson</a></li>
+                            <li><a href="https://cloud.google.com/dialogflow/docs/quick">Google Dialogflow (Text/Voice Interfaces)</a></li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h2>Starter Packs</h2>
+                        <h3>MLH</h3>
+                        <ul>
+                            <li><a href="https://hack.mlh.io/learn/">Hackathon Starter Kits & Guides</a></li>
+                        </ul>
+                        <h3>IBM</h3>
+                        <ul>
+                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Cooperation-2020">COVID-19 Cooperation Starter Kit</a></li>
+                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020">COVID-19 Communication Starter Kit</a></li>
+                            <li><a href="https://github.com/Call-for-Code/Solution-Starter-Kit-Education-2020">COVID-19 Education Starter Kit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

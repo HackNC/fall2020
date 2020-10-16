@@ -405,3 +405,45 @@ a {
         min-height: 70px;
     }
 }
+
+#prizes {
+    h2 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 95%;
+        padding-top: 0;
+    }
+
+    .card {
+        flex: 1 0 30%;
+        box-sizing: border-box;
+        background-color: $b-cream;
+        color: $b-brown;
+        border: 1px solid $b-brown;
+        margin: 1%;
+
+        &.full-width {
+            flex: 1 0 98%;
+        }
+
+        &.half-width {
+            flex: 1 0 46%;
+        }
+
+        @media only screen and (max-width: 993px) {
+            flex: 0 0 97.5%;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

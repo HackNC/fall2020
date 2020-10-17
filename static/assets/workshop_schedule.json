@@ -86,10 +86,6 @@
                     ],
                     "resources": [
                         {
-                            "text": "Slide Deck",
-                            "link": "https://drive.google.com/file/d/1bx9vjoma6bwzgWWmO9I254-DmsITd8ak/view?usp=sharing"
-                        },
-                        {
                             "text": "Data Repository",
                             "link": "https://github.com/CSSEGISandData/COVID-19"
                         }

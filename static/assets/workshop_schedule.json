@@ -97,7 +97,7 @@
                 },
                 "description": "In this workshop we will cover collecting data, preprocessing it for use with machine learning, some different types of machine learning models, and the basics of hyper-parameter optimization and AutoML. Participants should have a basic understanding of Machine learning concepts and some familiarity with the Python programming language. The goal is to build an end-to-end working model so that attendees have a good understanding of the model lifecycle and the importance of hyper-parameter tuning.",
                 "host": "IQVIA",
-                "difficulty": "2",
+                "difficulty": "Intermediate",
                 "location": "Twitch"
             },
             {

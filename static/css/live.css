@@ -178,7 +178,7 @@ nav ul a.selected {
   font-size: 5vw;
 }
 #mobile-nav-div img {
-  height: calc(.65 * 64px);
+  height: calc(0.65 * 64px);
   padding: 15px;
 }
 #mobile-nav-div.active {
@@ -297,7 +297,7 @@ nav ul a.selected {
 }
 
 a {
-  color: #0000EE;
+  color: #0000ee;
 }
 
 #schedule h2 {
@@ -408,16 +408,19 @@ a {
   min-height: 70px;
 }
 
-#prizes h2 {
+#prizes h2,
+#resources h2 {
   width: 100%;
   text-align: left;
   margin-bottom: 0;
 }
-#prizes .container {
+#prizes .container,
+#resources .container {
   width: 95%;
   padding-top: 0;
 }
-#prizes .card {
+#prizes .card,
+#resources .card {
   flex: 1 0 30%;
   box-sizing: border-box;
   background-color: #F7F2D8;
@@ -425,65 +428,42 @@ a {
   border: 1px solid #4f3426;
   margin: 1%;
 }
-#prizes .card.full-width {
+#prizes .card.full-width,
+#resources .card.full-width {
   flex: 1 0 98%;
 }
-#prizes .card.half-width {
+#prizes .card.half-width,
+#resources .card.half-width {
   flex: 1 0 46%;
 }
-#prizes .card.quarter-width {
+#prizes .card.quarter-width,
+#resources .card.quarter-width {
   flex: 1 0 22%;
 }
-@media only screen and (max-width: 993px) {
-  #prizes .card {
-    flex: 0 0 97.5% !important;
-  }
+#prizes .card.fifth-width,
+#resources .card.fifth-width {
+  flex: 1 0 15%;
+  vertical-align: middle;
+  display: inline-block;
 }
-#prizes .card h3 {
-  margin: 0;
-}
-#prizes .card p {
-  margin-bottom: 0;
-}
-
-#resources h2 {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 0;
-}
-#resources .container {
-  width: 95%;
-  padding-top: 0;
-  flex-flow: row wrap;
-}
-#resources img {
-  display: block;
+#prizes .card.fifth-width img,
+#resources .card.fifth-width img {
   width: 100%;
   height: auto;
 }
-#resources .item {
-  flex: 1 0 15%;
-  box-sizing: border-box;
-  margin: 1%;
-}
 @media only screen and (max-width: 993px) {
-  #resources .item {
+  #prizes .card,
+#resources .card {
     flex: 0 0 97.5% !important;
   }
 }
-
-.tech-container {
-  display: flex;
-  flex-flow: row wrap;
+#prizes .card h3,
+#resources .card h3 {
+  margin: 0;
 }
-
-.tech {
-  flex: 1 0 33.33%;
-}
-@media only screen and (max-width: 993px) {
-  .tech {
-    flex: 1 0 97.5% !important;
-  }
+#prizes .card p,
+#resources .card p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=live.css.map */

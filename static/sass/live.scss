@@ -493,13 +493,17 @@ a {
         }
 
         &.fifth-width {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             flex: 1 0 15%;
-            vertical-align: middle;
-            display: inline-block;
+            
+            h2 {
+                text-align: center;
+            }
 
             img {
                 width: 100%;
-                height: auto;
             }
         }
 

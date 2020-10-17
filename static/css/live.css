@@ -442,14 +442,18 @@ a {
 }
 #prizes .card.fifth-width,
 #resources .card.fifth-width {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex: 1 0 15%;
-  vertical-align: middle;
-  display: inline-block;
+}
+#prizes .card.fifth-width h2,
+#resources .card.fifth-width h2 {
+  text-align: center;
 }
 #prizes .card.fifth-width img,
 #resources .card.fifth-width img {
   width: 100%;
-  height: auto;
 }
 @media only screen and (max-width: 993px) {
   #prizes .card,

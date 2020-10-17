@@ -81,21 +81,14 @@
                 "time": "4:00pm",
                 "end": " - 5:00pm",
                 "type": "Panel",
-                "event": "Panel (HackNC): Women in Tech",
-                "location": "Twitch"
+                "event": "Panel (HackNC): Diversity in Tech",
+                "location": "<a href='https://unc.zoom.us/j/97553153114?pwd=MTI2SmJXUEhmeVl4ZTBNTDhaRkkxQT09' target='_blank'>Zoom</a><br>PW: hacknc2020"
             },
             {
                 "time": "5:00pm",
-                "end": " - 6:00pm",
-                "type": "Panel",
-                "event": "Panel (HackNC): Diversity in Tech",
-                "location": "Twitch"
-            },
-            {
-                "time": "6:00pm",
                 "end": " - 7:00pm",
                 "type": "Social",
-                "event": "HackNC Social Hour (Glimpse)",
+                "event": "HackNC Social Hours (Glimpse)",
                 "location": "<a href='https://app.joinglimpse.com/room?key=580A4B' target='_blank'>Glimpse</a>"
             },
             {

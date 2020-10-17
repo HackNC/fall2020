@@ -47,6 +47,19 @@
             {
                 "time": "6:30pm - 7:30pm",
                 "event": "Getting Started with MongoDB using Node.js",
+                "resources": {
+                    "prereqs": [
+                        {
+                            "text": "None"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "text": "Slide Deck",
+                            "link": "https://www.slideshare.net/NicRaboy/getting-started-with-mongodb-using-nodejs"
+                        }
+                    ]
+                },
                 "description": "In this workshop attendees will learn how to model their data and interact with it in a MongoDB NoSQL database using Node.js and JavaScript.",
                 "host": "MongoDB",
                 "difficulty": "Beginner",
@@ -59,10 +72,32 @@
         "schedule": [
             {
                 "time": "1:00pm - 2:00pm",
-                "event": "Using Machine Learning to Correlate the Effects of Regional Temperatures on the Number of Cases of COVID-19",
+                "event": "Using Machine Learning to predict the number of confirmed cases of COVID-19 by US county",
+                "resources": {
+                    "prereqs": [
+                        {
+                            "text": "Install Jupyter",
+                            "link": "https://jupyter.org/install"
+                        },
+                        {
+                            "text": "Install conda",
+                            "link": "https://docs.conda.io/projects/conda/en/latest/user-guide/install/"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "text": "Slide Deck",
+                            "link": "https://drive.google.com/file/d/1bx9vjoma6bwzgWWmO9I254-DmsITd8ak/view?usp=sharing"
+                        },
+                        {
+                            "text": "Data Repository",
+                            "link": "https://github.com/CSSEGISandData/COVID-19"
+                        }
+                    ]
+                },
                 "description": "In this workshop we will cover collecting data, preprocessing it for use with machine learning, some different types of machine learning models, and the basics of hyper-parameter optimization and AutoML. Participants should have a basic understanding of Machine learning concepts and some familiarity with the Python programming language. The goal is to build an end-to-end working model so that attendees have a good understanding of the model lifecycle and the importance of hyper-parameter tuning.",
                 "host": "IQVIA",
-                "difficulty": "",
+                "difficulty": "2",
                 "location": "Twitch"
             },
             {

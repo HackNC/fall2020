@@ -133,13 +133,6 @@
             },
             {
                 "time": "1:00am",
-                "end": "",
-                "type": "Social",
-                "event": "Spicy Ramen Challenge",
-                "location": "Twitch"
-            },
-            {
-                "time": "1:00am",
                 "end": " - 2:00am",
                 "type": "Workshop",
                 "event": "Sponsor Workshop",

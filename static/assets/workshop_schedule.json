@@ -97,11 +97,27 @@
                 "location": "Twitch"
             },
             {
+                "time": "1:00pm - 2:00pm",
+                "event": "Cloud Hero - BigQuery - Data & ML",
+                "description": "Cloud Hero is a key opportunity for students to learn the fundamental tools and capabilities of Google Cloud, share an engaging experience, and experience virtual training with a little competition thrown in for fun. The game is made up of a virtual hands-on technical lab (Qwiklabs) layered with activity-tracking and scoring. Earn Google Cloud badges to show your skills and expertise!",
+                "host": "Google Cloud",
+                "difficulty": "Intermediate",
+                "location": "Twitch"
+            },
+            {
                 "time": "2:00pm - 3:00pm",
                 "event": "Intro to Docker",
                 "description": "Containerization - an introduction to Docker, and how it is used in projects of all scales. We will explore using Docker to build microservices in an interactive workshop.",
                 "host": "CapTech",
                 "difficulty": "Beginner",
+                "location": "Twitch"
+            },
+            {
+                "time": "2:00pm - 3:00pm",
+                "event": "Introduction to Firebase",
+                "description": "Hello Hackers! Welcome to the tech talk over an Introduction to Firebase. Googler, Andrea Wu, will give an overview and showcase a demo on how your team can use Firebase for your hackathon project and/or personal projects.",
+                "host": "Google Cloud",
+                "difficulty": "Intermediate",
                 "location": "Twitch"
             },
             {

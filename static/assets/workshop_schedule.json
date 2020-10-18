@@ -156,7 +156,7 @@
                 "description": "The past 30 years have seen a lot of change in software engineering, and we’ll explore various themes and trends through the lens of 3 of its visionaries. You’ll see that certain things we view as novel today are actually pretty old, and we will discuss how software engineering has evolved over 3 decades.",
                 "host": "CoStar",
                 "difficulty": "-",
-                "location": "Twitch"
+                "location": "<a target='_blank_' href='https://youtu.be/GM8GWOZp8Pc'>YouTube</a>"
             },
             {
                 "time": "7:00pm - 7:30pm",
@@ -164,7 +164,7 @@
                 "description": "You know if this workshop is for you if: You want to create art but you can’t draw a straight line. You want to code and you are a visual learner. You like to make pretty things! Join me to learn how to code using p5.js, a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!",
                 "host": "HERE Technologies",
                 "difficulty": "Beginner",
-                "location": "Twitch"
+                "location": "<a target='_blank_' href='https://youtu.be/x04N8sSZG-I'>YouTube</a>"
             },
             {
                 "time": "7:30pm - 8:00pm",
@@ -172,7 +172,7 @@
                 "description": "Have you always had an idea about a cool feature you wish a website had or a way for them to have a better user experience? Do you want to have a side project to show future employers a tool you have created that has been adopted by the community with a 5-star rating? Join me to make a Chrome extension in just 10 minutes!",
                 "host": "HERE Technologies",
                 "difficulty": "Beginner",
-                "location": "Twitch"
+                "location": "<a target='_blank_' href='https://youtu.be/RY147_-ncfU'>YouTube</a>"
             },
             {
                 "time": "9:00pm - 10:00pm",
@@ -180,7 +180,7 @@
                 "description": "APIs are everywhere in 2020, powering all the web, mobile, and device applications we depend on each day. Let's spend some time looking at this API landscape, using Postman as our browser for the rapidly growing API universe.",
                 "host": "Postman",
                 "difficulty": "-",
-                "location": "Twitch"
+                "location": "<a target='_blank_' href='https://youtu.be/GZzInP4Q--k'>YouTube</a>"
             }
         ]
     },
@@ -222,7 +222,7 @@
                 "description": "Driving targeted sales to brick and mortar stores using classic Digital Marketing strategies is a complex task. Hyper-local marketing lets you target prospective customers to very specific locations and in real time. This can be achieved by leveraging Location technology. This workshop explores the creation of geofences using the HERE Location Services and using them to send real-time offers to customers based on their location. We will use AWS Lambda for HERE Location Services to find out if the customer is within the boundaries of the store.",
                 "host": "HERE Technologies",
                 "difficulty": "Intermediate",
-                "location": "Twitch"
+                "location": "<a target='_blank_' href='https://youtu.be/E4Y38BCuWf8'>YouTube</a>"
             },
             {
                 "time": "3:00pm - 4:00pm",

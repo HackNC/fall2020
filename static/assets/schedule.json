@@ -140,16 +140,16 @@
             },
             {
                 "time": "12:00pm",
-                "end": " - 1:00pm",
+                "end": "",
                 "type": "General",
-                "event": "Devpost Submission Window",
+                "event": "<b>Initial Devpost submissions due!</b>",
                 "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
             },
             {
                 "time": "1:00pm",
                 "end": "",
                 "type": "General",
-                "event": "<b>Hacking Ends!</b> Final submissions DUE (2 min. video + code on Devpost)",
+                "event": "<b>Hacking Ends! Final Devpost submissions due!</b>",
                 "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
             },
             {
